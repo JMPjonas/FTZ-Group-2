@@ -2,13 +2,8 @@
 
 /*BODY Start*/
 body {
-	background-color: #D17879;
+	background-color: #EEEEEE;
 }
-
-h2{
-  color: #7C3031;
-}
-
 
 /*BODY Slut*/
 
@@ -20,7 +15,12 @@ h2{
 
 
 /*Nicoline start*/
-
+@media screen and (max-width: 992px)
+    
+    .logingrid{
+        display: grid;
+        
+}
 /*Nicoline slut*/
 
 
