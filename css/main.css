@@ -17,10 +17,11 @@ body {
 /*Nicoline start*/
 @media screen and (max-width: 992px)
     
-    .logingrid{
-        display: grid;
-        
+.logingrid{
+    display: grid;        
 }
+
+
 /*Nicoline slut*/
 
 
