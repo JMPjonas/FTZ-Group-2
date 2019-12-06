@@ -4,13 +4,33 @@
     <title>Login side</title>
      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel = "stylesheet" type = "text/css" href = "/css/main.css" />
+       <link rel = "stylesheet" type = "text/css" href = "../css/main.css">
        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
        <script src="/js/main.js"></script>
 </head>
 <body>
-  <h2>hej</h2>
-
+<div class="logingrid">
+        <div class="forsidelogo">
+                <img src="chat.html" width="1243" height="500" alt=""/>
+        </div>
+            <form>
+                <!--Nummerplade-->
+                    <input type="nummerplade" name="nummerplade" id="nummerplade" placeholder=" Nummerplade"/>
+                    <br>
+                <!--Adgangskode-->
+                    <input type="password" name="" id="adgangskode" placeholder=" Adgangskode" name="Adgangskode"/>
+                    <br>
+                    <br>
+                <!--Opret bruger-->
+                    <a href="#" onclick="location.href='.html'" class="forgot-pass">Opret bruger</a>
+                 <!--Glemt adgangskode-->
+                    <a href="#" onclick="location.href='.html'" class="forgot-pass">Glemt adgangskode</a>
+                <!--Button-->
+                    <input type="button" value="Login" id="submit" onclick="validate()"/>
+            </form> 
+        
+</div>
+ 
 
 
 </body>
