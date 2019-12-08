@@ -54,42 +54,122 @@ body {
     grid-template-columns: 5% 90 5%;
     grid-template-rows: 25% 30% 25% 25% 25%;
 }
-.hbox{
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
 .hburger{
   grid-column-start: 1;
   grid-row-start: 1;}
 
+/*Grid til box*/
+.helpbox{
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 48% 30% 25% 25% ;
+}
+.hbox{
+ width: 100%;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
 
 /*Buttons*/
 .helpgrid2{
-    z-index: 2;
+    z-index: 3;
     display: grid;
-    grid-template-columns: 5% 90 5%;
-    grid-template-rows: 60% 50% 40% 50% 30% 50% 50% 50% 50%;
+    grid-template-columns: 10% 10% 5% 40% 15% 10% 10%;
+    grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15% 15% 15% ;
 }
 /*Instruments symboler*/
-.help1{}
-.hicon1{}
-.hline{}
+.help1{
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.hicon1{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    color: #0C213E;
+    width: 100%;
+}
+.hline1{
+    
+}
+.pil1{
+    grid-column-start: 6;
+    grid-row-start: 1;
+}
+
 /*DriveClever*/
-.help2{}
-.hicon2{}
+.help2{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+.hicon2{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: #0C213E;
+    width: 100%;
+}
 .hline2{}
+.pil2{
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+
+
 /*DriveSafe*/
-.help3{}
-.hicon3{}
+.help3{
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+.hicon3{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    color: #0C213E;
+    width: 100%;
+}
 .hline3{}
+.pil3{
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+
 /*Mine dokumenter*/
-.help4{}
-.hicon4{}
+.help4{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+.hicon4{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    color: #0C213E;
+    width: 100%;
+}
 .hline4{}
+.pil4{
+    grid-column-start: 6;
+    grid-row-start: 4;
+}
+
 /*Support*/
-.help5{}
-.hicon5{}
+.help5{
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+.hicon5{
+    grid-column-start: 2;
+    grid-row-start: 5;
+    color: #0C213E;
+    width: 100%;
+}
 .hline5{}
+.pil5{
+    grid-column-start: 6;
+    grid-row-start: 5;
+}
+
+
 /*Jonas slut*/
 
 
