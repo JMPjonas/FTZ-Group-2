@@ -1,4 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+/*Tekst family "START"*/
+
+/*Headlines (SemiBold)*/
+h1{
+    font-family: 'open sans';
+    font-weight: 600;
+    font-size: 30px;
+    align-content: center;
+    color: #0C213E;
+}
+
+/*Hvid stor knap "Ring nu" (BOLD)*/
+h2{
+   font-family: 'open sans';
+    font-weight: 700;
+    font-size: 21px;
+    align-content: right;
+    color: #ffffff; 
+}
+
+/*Knapper (light)*/
+h3{
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 15px;
+    align-content: left;
+    color: #0C213E; 
+}
+/*Tekst felter med regular 15px*/
+h4{
+    font-family: 'open sans';
+    font-weight: 400;
+    font-size: 15px;
+    align-content: center;
+    color: #0C213E; 
+}
+/*Tekst family "SLUT"*/
 
 /*BODY Start*/
 
@@ -12,6 +49,128 @@ body {
 
 
 /*Jonas start*/
+/*Burgermenu, Headline & box*/
+.helpburger{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 5% 90 5%;
+    grid-template-rows: 25% 30% 25% 25% 25%;
+}
+.hburger{
+  grid-column-start: 1;
+  grid-row-start: 1;}
+
+/*Grid til box*/
+.helpbox{
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 48% 30% 25% 25% ;
+}
+.hbox{
+ width: 100%;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+
+/*Buttons*/
+.helpgrid2{
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 10% 10% 5% 40% 15% 10% 10%;
+    grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15% 15% 15% ;
+}
+/*Instruments symboler*/
+.help1{
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.hicon1{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    color: #0C213E;
+    width: 100%;
+}
+.hline1{
+    
+}
+.pil1{
+    grid-column-start: 6;
+    grid-row-start: 1;
+}
+
+/*DriveClever*/
+.help2{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+.hicon2{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: #0C213E;
+    width: 100%;
+}
+.hline2{}
+.pil2{
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+
+
+/*DriveSafe*/
+.help3{
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+.hicon3{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    color: #0C213E;
+    width: 100%;
+}
+.hline3{}
+.pil3{
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+
+/*Mine dokumenter*/
+.help4{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+.hicon4{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    color: #0C213E;
+    width: 100%;
+}
+.hline4{}
+.pil4{
+    grid-column-start: 6;
+    grid-row-start: 4;
+}
+
+/*Support*/
+.help5{
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+.hicon5{
+    grid-column-start: 2;
+    grid-row-start: 5;
+    color: #0C213E;
+    width: 100%;
+}
+.hline5{}
+.pil5{
+    grid-column-start: 6;
+    grid-row-start: 5;
+}
+
 
 /*Jonas slut*/
 
