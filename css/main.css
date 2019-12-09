@@ -620,6 +620,7 @@ br{
     z-index: 2;
     grid-column-start: 1;
     grid-row-start: 1;
+    
 }
 
 .coverskrift{
@@ -630,12 +631,21 @@ br{
     grid-row-start: 1;
 }
 
+.bilen{
+    margin-top: 65%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 90%;
+}
+
 /*Buttons*/
 .clistgrid{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70%;
+    margin-top: 70%;xs
     z-index: 3;
     grid-column-start: 1;
     grid-row-start: 1;
