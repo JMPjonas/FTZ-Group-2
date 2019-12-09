@@ -22,7 +22,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		legendMarkerColor: "blue",
 		legendText: "MMbbl = one million barrels",
 		dataPoints: [      
-			{ y: 600, label: "Venezuela" },
+			{ y: 600, label: "December" },
 			{ y: 266455,  label: "Saudi" },
 			{ y: 169709,  label: "Canada" },
 			{ y: 158400,  label: "Iran" },
@@ -35,4 +35,9 @@ var chart = new CanvasJS.Chart("chartContainer", {
 });
 chart.render();
 
+}
+
+function clickX()
+{
+  $(".validation").animate({ 'height': '16px' }, 500).show();
 }
