@@ -6,6 +6,9 @@ function validateForm() {
   }
 }
 
+/* Ida Start */ 
+
+/*Ida Slut*/
 window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
@@ -41,3 +44,4 @@ function clickX()
 {
   $(".validation").animate({ 'height': '16px' }, 500).show();
 }
+
