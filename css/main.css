@@ -47,10 +47,14 @@ h5{
 
 /*BODY Start*/
 body {
+
+	background-color: #EEEEEE;
+    overflow-x: hidden;
 	overflow: hidden;
     margin 0;
     padding: 0;
     background-color: #eeeeee;
+
 }
 /*BODY Slut*/
 
@@ -369,7 +373,13 @@ width: 1000%;
 /*Chat*/
 
 .chatbox{
- margin-left: 0%
+ margin-left: %
+}
+
+.logochat{
+    position: absolute;
+    margin-left: -70%;
+    margin-top: 15%;
 }
    
 
@@ -378,7 +388,7 @@ width: 1000%;
   height: 100%;
   cursor: default;
   margin: auto;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
 .container::-webkit-scrollbar{
@@ -474,18 +484,14 @@ box-shadow: 0 5px 5px rgba(14, 41, 78);
   border:1px solid transparent;
   resize:none;
 }
-.Area textarea:focus
-{
-  color:#0E294E;
+.Area textarea:focus{
+  color:#00000029;
      -webkit-transition: all 1.5s;
     -moz-transition: all 1.5s;
     transition: all 1.5s;
   background-color:#fff;
 }
-.Area .note{
-  color:;
-  font-size:10px;
-}
+
 .R .tooltip{
   font-family: "open sans";
   font-size:15px;
@@ -559,12 +565,12 @@ a{
   background-color:#333;
   color:#0E294E;
   outline:none;
-  border:1px solid transparent;
+  border:2px solid transparent;
   float:left;
 }
 .Area input[type=button]:hover{
   color:#fff;
-  border:1px solid #ccc;
+  border:1px solid #00000029;
      -webkit-transition: all 1.5s;
     -moz-transition: all 1.5s;
     transition: all 1.5s;
