@@ -44,3 +44,6 @@ function clickX()
   $(".validation").animate({ 'height': '16px' }, 500).show();
 }
 
+/* JONAS START*/
+
+/* JONAS SLUT*/

@@ -57,6 +57,15 @@ body {
 /*Jonas start*/
 
 /*Burgermenu, Headline & box*/
+.kort{
+    justify-self: center;
+    z-index: 1;
+    grid-column-start: 1;
+    grid-row-start: 1; 
+    
+}
+
+/*Vejhjælp (START)*/
 .vejfalck{
     margin-top: 75%;
     justify-self: center;
@@ -89,7 +98,6 @@ body {
     grid-row-start: 1;
 }
 
-/*Vejhjælp (START)*/
 .vejlillebox{
     margin-top: 43%;
     z-index: 2;
@@ -1010,7 +1018,7 @@ br{
 }
 
 .nummerplade {
-     margin-top: 146%;
+     margin-top: 40%;
     justify-self: center;
     z-index: 4;
     grid-column-start: 1;
@@ -1094,7 +1102,6 @@ l = linje
 }
 /*Support (SLUT)*/
 /*Joachim slut*/
-
 
 /*Ida start*/
 
