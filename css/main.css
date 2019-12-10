@@ -926,13 +926,96 @@ br{
 
 
 .bilen{
-    margin-top: 85%;
+    margin-top: 90%;
     justify-self: center;
     z-index: 4;
     grid-column-start: 1;
     grid-row-start: 1;
 }
 
+.bilnavn {
+  margin-top: 60%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;  
+    
+}
+
+.bilnavn {
+    
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 25px;
+    align-content: center;
+    color: #0C213E;
+    
+}
+
+.motor {
+    margin-top: 72%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;  
+      
+}
+
+.motor {
+    font-family: 'open sans';
+    font-weight: 100;
+    font-size: 20px;
+    align-content: center;
+    color: #0C213E;
+}
+
+.distance {
+     margin-top: 135%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.distance {
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 23px;
+    align-content: center;
+    color: #0C213E;
+}
+
+.kilometer {
+    margin-top: 146%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.kilometer {
+    font-family: 'open sans';
+    font-weight: 100;
+    font-size: 15px;
+    align-content: center;
+    color: #0C213E;
+}
+
+.tilbage {
+     margin-top: 160%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.nummerplade {
+     margin-top: 146%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
 
 /*Buttons*/
 
@@ -947,7 +1030,7 @@ br{
     z-index: 2;
     display: grid;
     grid-template-columns: 10% 10% 5% 55% 5% 10% 10%;
-    grid-template-rows: 14% 14% 14% 14% 14%;
+    grid-template-rows: 14% 20% 14% 10% 10%;
 }
 
 /*
