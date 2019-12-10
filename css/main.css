@@ -56,6 +56,10 @@ body {
 
 /*Jonas start*/
 
+/*kalender (START)*/
+
+/*Kalender (SLUT)*/
+
 /*Burgermenu, Headline & box*/
 .kort{
     justify-self: center;
@@ -190,7 +194,6 @@ body {
     grid-row-start: 2;
 }
 
-/*DriveSafe (START)*/
 .lt1{
     grid-column-start: 4;
     grid-row-start: 2;
@@ -216,10 +219,7 @@ body {
     grid-column-start: 2;
     grid-row-start: 2;
 }
-/*DriveSafe (SLUT)*/
 
-
-/*Mine dokumenter (START)*/
 .lt2{
     grid-column-start: 4;
     grid-row-start: 3;
@@ -244,9 +244,7 @@ body {
     grid-column-start: 2;
     grid-row-start: 3;
 }
-/*Mine dokumenter (SLUT)*/
 
-/*Support (START)*/
 .lt3{
     grid-column-start: 4;
     grid-row-start: 4;
@@ -271,7 +269,6 @@ body {
     grid-column-start: 2;
     grid-row-start: 4;
 }
-/*Support (SLUT)*/
 /*Værksted (SLUT)*/
 
 /*Indbakke (START)*/
@@ -316,16 +313,6 @@ body {
     grid-row-start: 1;
 }
 /*DriveSafe (SLUT)*/
-
-/*Kalender (START)*/
-.kalenderliste{
-    margin-top: 80%;
-    justify-self: center;
-    z-index: 3;
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-/*Kalender (SLUT)*/
 
 /*Instruments symbol hjælp (START)*/
 .instru{
