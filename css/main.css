@@ -57,13 +57,110 @@ body {
 /*Jonas start*/
 
 /*Burgermenu, Headline & box*/
+.vejfalck{
+    margin-top: 75%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.vejadr{
+    margin-top: 88%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.aabning{
+    margin-top: 102%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.vejtlf{
+    margin-top: 118%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+/*Vejhjælp (START)*/
+.vejlillebox{
+    margin-top: 43%;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.vejlillemenuogbox{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 60%;
+}
+
+.vejlillelistgrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 9% 10% 5% 55% 5% 10% 10%;
+    grid-template-rows: 8% 7% 7% 7%;
+}
+
+.infobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25%;
+}
+
+
+.vejbox{
+    margin-top: 45%;
+    justify-self: center;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+.vht1{
+    z-index: 4;
+    justify-self: center;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.vejoverskrift{
+    margin-top: 20%;
+    justify-self: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+/*Vejhjælp (SLUT)*/
 
 /*Værksted (START)*/
 .lillemenuogbox{
     z-index: 1;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100% 100%;
+    grid-template-rows: 105% 100%;
 }
 
 .lillelistgrid{
