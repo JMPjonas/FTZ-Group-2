@@ -437,7 +437,7 @@ background: #0E294E;
   padding:5px;    
 }
 
-}
+
 
 
 
@@ -631,28 +631,34 @@ br{
     grid-row-start: 1;
 }
 
+/*
 .bilen{
-    margin-top: 65%;
+    margin-top: 40%;
     justify-self: center;
     z-index: 4;
     grid-column-start: 1;
     grid-row-start: 1;
     width: 90%;
 }
+*/
+
+
+
 
 /*Buttons*/
 .clistgrid{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70%;xs
-    z-index: 3;
+    margin-top: 70%;
+    z-index: 14;
     grid-column-start: 1;
     grid-row-start: 1;
-    z-index: 2;
+    z-index: 13;
     display: grid;
     grid-template-columns: 10% 10% 5% 55% 5% 10% 10%;
     grid-template-rows: 14% 14% 14% 14% 14%;
+    position: absolute
 }
 
 
