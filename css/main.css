@@ -88,6 +88,22 @@ body {
     grid-row-start: 1;
 }
 
+.drives{
+    margin-top: 65%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.aktiv{
+    margin-top: 45%;
+    justify-self: center;
+    z-index: 5;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
 /*Buttons*/
 
 .listgrid{
@@ -623,12 +639,14 @@ br{
 /*Joachim start*/
 
 /*Burgermenu, Headline & box*/
+
 .cmenuogbox{
-    
+    z-index: 1;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 }
+
 .cmenu{
     z-index: 1;
     grid-column-start: 1;
@@ -642,7 +660,6 @@ br{
     z-index: 2;
     grid-column-start: 1;
     grid-row-start: 1;
-    
 }
 
 .coverskrift{
@@ -653,36 +670,30 @@ br{
     grid-row-start: 1;
 }
 
-/*
 .bilen{
-    margin-top: 40%;
+    margin-top: 85%;
     justify-self: center;
     z-index: 4;
     grid-column-start: 1;
     grid-row-start: 1;
-    width: 90%;
 }
-*/
-
-
 
 
 /*Buttons*/
+
 .clistgrid{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 70%;
-    z-index: 14;
+    z-index: 3;
     grid-column-start: 1;
     grid-row-start: 1;
-    z-index: 13;
+    z-index: 2;
     display: grid;
     grid-template-columns: 10% 10% 5% 55% 5% 10% 10%;
     grid-template-rows: 14% 14% 14% 14% 14%;
-    position: absolute
 }
-
 
 /*
 t = tekst
@@ -691,52 +702,59 @@ p = Pil
 l = linje
 */
 
-
-/*Mine dokumenter*/
+/*Mine dokumenter (START)*/
 .ct1{
     grid-column-start: 4;
     grid-row-start: 4;
 }
+
 .ci1{
     grid-column-start: 2;
     grid-row-start: 4;
     color: #0C213E;
     width: 100%;
 }
+
 .cp1{
     justify-self: center;
     grid-column-start: 6;
     grid-row-start: 4;
 }
+
 .cl1{
     margin-top: 130%;
     z-index: 2;
     grid-column-start: 2;
     grid-row-start: 4;
 }
+/*Mine dokumenter (SLUT)*/
 
-/*Hjælp*/
+/*Support (START)*/
 .ct2{
     grid-column-start: 4;
     grid-row-start: 5;
 }
+
 .ci2{
     grid-column-start: 2;
     grid-row-start: 5;
     color: #0C213E;
     width: 100%;
 }
+
 .cp2{
     justify-self: center;
     grid-column-start: 6;
     grid-row-start: 5;
 }
+
 .cl2{
     margin-top: 130%;
     z-index: 2;
     grid-column-start: 2;
     grid-row-start: 5;
 }
+/*Support (SLUT)*/
 /*Joachim slut*/
 
 
