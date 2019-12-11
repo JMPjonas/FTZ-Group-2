@@ -48,90 +48,131 @@ h5{
 /*BODY Start*/
 body {
 	background-color: #EEEEEE;
-    overflow-x: hidden;
-    margin 0;
-    padding: 0;
-    background-color: #eeeeee;
 	overflow: hidden;
     margin 0;
     padding: 0;
-    padding-left: 0rem;
-    padding-right: 0rem;
 }
-
+@media only screen and (max-width: 410px) {
+    
+/*Dette er "kommer snart" teksten som først skal komme på skærme der er størrere end 410px i bredden.*/
+.comingsoon{display: none;}
+    
 /*BODY Slut*/
 
 /*Jonas start*/
 
-/*kalender (START)*/
-
-/*Kalender (SLUT)*/
 
 /*Burgermenu, Headline & box*/
+
+/*Div class til at bygge et kort ind i baggrunden på vejhjælps siden.*/
 .kort{
+    /*Placerer element i midten af Grid*/
     justify-self: center;
+    /*Z-index definerer hvilket element der ligger nedest*/
     z-index: 1;
+    /*Bestemmer hvilken lodret række elementet skal være i*/
     grid-column-start: 1;
+    /*Bestemmer hvilken vandret række elementet skal være i*/
     grid-row-start: 1; 
-    
 }
 
 /*Vejhjælp (START)*/
+    
+/*Infobox tekstlinje 1*/
 .vejfalck{
+    /*Skupper element ned lodret.*/
     margin-top: 75%;
+    /*Placerer element i midten af Grid*/
     justify-self: center;
+    /*Z-index definerer hvilket element der ligger nedest*/
     z-index: 6;
+    /*Bestemmer hvilken lodret række elementet skal være i*/
     grid-column-start: 1;
+    /*Bestemmer hvilken vandret række elementet skal være i*/
     grid-row-start: 1;
 }
 
+/*Infobox tekstlinje 2*/
 .vejadr{
+    /*Skupper element ned lodret.*/
     margin-top: 88%;
+    /*Placerer element i midten af Grid*/
     justify-self: center;
+    /*Z-index definerer hvilket element der ligger nedest*/
     z-index: 6;
+    /*Bestemmer hvilken lodret række elementet skal være i*/
     grid-column-start: 1;
+    /*Bestemmer hvilken vandret række elementet skal være i*/
     grid-row-start: 1;
 }
 
+/*Infobox tekstlinje 3*/
 .aabning{
+    /*Skupper element ned lodret.*/
     margin-top: 102%;
+    /*Placerer element i midten af Grid*/
     justify-self: center;
+    /*Z-index definerer hvilket element der ligger nedest*/
     z-index: 6;
+    /*Bestemmer hvilken lodret række elementet skal være i*/
     grid-column-start: 1;
+    /*Bestemmer hvilken vandret række elementet skal være i*/
     grid-row-start: 1;
 }
 
+/*Infobox tekstlinje 4*/
 .vejtlf{
+    /*Skupper element ned lodret.*/
     margin-top: 118%;
+    /*Placerer element i midten af Grid*/
     justify-self: center;
+    /*Z-index definerer hvilket element der ligger nedest*/
     z-index: 6;
+    /*Bestemmer hvilken lodret række elementet skal være i*/
     grid-column-start: 1;
+    /*Bestemmer hvilken vandret række elementet skal være i*/
     grid-row-start: 1;
 }
-
+/*Infobox der er i midten*/
 .vejlillebox{
+    /*Skupper element ned lodret.*/
     margin-top: 43%;
+    /*Z-index definerer hvilket element der ligger nedest*/
     z-index: 2;
+    /*Bestemmer hvilken lodret række elementet skal være i*/
     grid-column-start: 1;
+    /*Bestemmer hvilken vandret række elementet skal være i*/
     grid-row-start: 2;
 }
 .vejlillemenuogbox{
+    /*Z-index definerer hvilket element der ligger nedest*/
     z-index: 1;
+    /*Dette gør at man aktivere Grid tilat det kan anvendes.*/
     display: grid;
+    /*Indstiller hvor mange lodrette rækker der skal være i griddet.*/
     grid-template-columns: 100%;
+    /*Indstiller hvor mange vandrette rækker der skal være i griddet.*/
     grid-template-rows: 20% 10% 60%;
 }
 
 .vejlillelistgrid{
+    /*Dette gør at elementet kan strækkes for at passe til alle skærme*/
     display: flex;
+    /*Placerer element i midten af Grid*/
     justify-content: center;
+    /*Placerer element i midten af Grid*/
     align-items: center;
+    /*Z-index definerer hvilket element der ligger nedest*/
     z-index: 3;
+    /*Bestemmer hvilken lodret række elementet skal være i*/
     grid-column-start: 1;
+    /*Bestemmer hvilken vandret række elementet skal være i*/
     grid-row-start: 3;
-    z-index: 2;
+    /*Dette gør at man aktivere Grid tilat det kan anvendes.*/
     display: grid;
+    /*Indstiller hvor mange lodrette rækker der skal være i griddet.*/
     grid-template-columns: 9% 10% 5% 55% 5% 10% 10%;
+    /*Indstiller hvor mange vandrette rækker der skal være i griddet.*/
     grid-template-rows: 8% 7% 7% 7%;
 }
 
@@ -753,7 +794,7 @@ box-shadow: 0 5px 5px rgba(14, 41, 78);
 .text{
   color: #0E294E;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 20px;
   font-weight:lighter;
   line-height: 30px;
   width:300px;
@@ -765,24 +806,24 @@ box-shadow: 0 5px 5px rgba(14, 41, 78);
 }
 
 .Area textarea{
-  color:#0E294E;
-  font-size:20px;
-  font-family: "open sans";
-  font-weight: 200;
+  font-size:18px;
   width:90%;
   max-width:90%;
   min-width:90%;
-  padding:10%;
-  border-radius: 20px;
+  padding:5%;
+  border-radius:5px;
+  border:1px solid #f0f0f1;
   max-height:50px;
   height:50px;
   min-height:50px;
-  background-color:#DADADA;
+  background-color:#E3E3E3;
+  color:#0E294E;
+  outline:none;
   border:1px solid transparent;
   resize:none;
 }
 .Area textarea:focus{
-  color: #0E294E;
+  color:#00000029;
      -webkit-transition: all 1.5s;
     -moz-transition: all 1.5s;
     transition: all 1.5s;
@@ -797,6 +838,8 @@ box-shadow: 0 5px 5px rgba(14, 41, 78);
   padding:5px;
   border-radius:5px;
   border:2px solid #0E294E;
+  margin-left:70px;
+  margin-top:-70px;
   display:none;
   color: #0E294E;
   font-weight: 200;
@@ -831,7 +874,8 @@ box-shadow: 0 5px 5px rgba(14, 41, 78);
   font-weight: 200;
   color: #0E294E;
 }
-.L .tooltip:before{
+.L .tooltip:before
+{
     content: '';
     position: absolute;
     width: 1px;
@@ -854,16 +898,39 @@ a{
   font-size:20px;
   font-family: "open sans";
   padding:5px;
-  width: 30%;
-  border-radius:15px;
+  border-radius:5px;
   border:1px solid #f0f0f1;
-  background-color:#0E294E;
-  color:#fff;
+  background-color:#333;
+  color:#0E294E;
   outline:none;
   border:2px solid transparent;
   float:left;
 }
+.Area input[type=button]:hover{
+  color:#fff;
+  border:1px solid #00000029;
+     -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    transition: all 1.5s;
+  background-color: #0E294E;
+} 
 
+.validation{
+  float:left;
+  background-color:#ccc;
+  border-radius:5px;
+  padding:5px;
+  font-size:12px;
+  line-height:14px;
+  height:0px;
+  margin-left:5px;
+  display:none;
+}
+
+br{
+  clear:both;
+  height:20px;
+}
     
 /*Nicoline slut*/
 
@@ -1076,3 +1143,14 @@ l = linje
 /*Ida start*/
 
 /*Ida slut*/
+    
+} /*Dette er til media query i toppen!*/
+
+@media only screen and (min-width: 410px) {
+    body{ background-color: black;}
+    .menuogbox{display: none;}
+    .comingsoon{justify-self: center;}
+    .comingsoon1{color: white;}
+    
+    }
+    
