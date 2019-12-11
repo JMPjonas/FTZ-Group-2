@@ -917,5 +917,110 @@ l = linje
 
 
 /*Ida start*/
+body{
+    background-color: white; 
+}
 
+.btn-toggle-nav{
+  width:60px;
+  height:45px;
+  position:fixed; 
+  left: 2; 
+  margin: 0vh;
+  margin-top: -6vh; 
+  cursor:pointer;
+}
+
+.btn-toggle-nav > span{
+  width: 35px; 
+  height:9px;
+  border-radius:20px;
+  display:block;
+  background-color:#0E294E;
+  position:absolute;
+  transition: all .25s ease-in-out;
+  transform-origin: left center;
+  -webskit-transform-origin: left center;
+  -o-transform-origin: left center;
+  -moz-transform-origin: left center;
+}
+
+.btn-toggle-nav span:nth-child(1){
+  top:0;
+  left:0;
+}
+.btn-toggle-nav span:nth-child(2){
+  top:18px;
+  left:0;
+}
+.btn-toggle-nav span:nth-child(3){
+  top:36px;
+  left:0;
+}
+
+.btn-toggle-nav.open span:nth-child(1){
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+.btn-toggle-nav.open span:nth-child(2){
+    width:0;
+    opacity: 0; 
+}
+
+.btn-toggle-nav.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
+}
+
+.nav-sidebar{
+    position: fixed;
+    top: 1; 
+    left: 0; 
+    bottom: 0; 
+    width: 0px;
+    height: calc(100vh - 60px); 
+    padding: 0 5px; 
+    background-color: #EEEEEE; 
+    z-index: 1000;
+    transition: all 0.5s ease-in-out; 
+}
+
+.nav-sidebar ul{
+  padding-top: 15px;
+  overflow: hidden;
+  visibility: hidden; 
+    
+}
+
+.nav-sidebar ul li{
+ line-height: 40px;
+    list-style: none; 
+}
+
+.nav-sidebar ul li a {
+  display: block; 
+  height: 100%; 
+  padding: 0 10px; 
+  text-decoration: none; 
+  text-transform: uppercase;
+  color: #0E294E; 
+  font-family: 'montserrat', 'open sans'; 
+  font-size: 20px;
+  white-space: nowrap; 
+  opacity: 0;
+  transition: all 0.5s ease-in-out; 
+
+}
+
+.nav-sidebar ul li a:hover{
+  background-color: antiquewhite; 
+    
+}
+
+.minbil{
+     
+}
 /*Ida slut*/

@@ -6,6 +6,57 @@ function validateForm() {
   }
 }
 /* Ida Start */ 
+let toggleNavStatus = false; 
+
+let toggleNav = function(){
+ let getSidebar = document.querySelector(".nav-sidebar");
+ let getSidebarUl = document.querySelector(".nav-sidebar ul");
+ let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
+
+ 
+if (toggleNavStatus === false) {
+  getSidebarUl.style.visibility = "visible";
+  getSidebar.style.width = "100%"; 
+    
+let arrayLength = getSidebarLinks.length; 
+for (let i = 0; i < arrayLength; i++) {
+    getSidebarLinks[i].style.opacity = "1"; 
+  } 
+    
+ toggleNavstatus = true;
+         
+}
+
+    
+else if (toggleNavStatus === true) {
+    getSidebar.style.width = "0%"; 
+    
+let arrayLength = getSidebarLinks.length; 
+for (let i = 0; i < arrayLength; i++) {
+    getSidebarLinks[i].style.opacity = "0";
+  } 
+
+ getSidebarUl.style.visibility = "hidden"; 
+    
+ toggleNavstatus = false;
+         
+     }
+}
+
+window.onload = function (){
+  let btnToggleNav = document.getElementById(".btn-toggle-nav");
+  btnToggleNav.addEventListener("click", e => {
+  
+    if(btnToggleNav.classList.contains("open")){
+      btnToggleNav.classList.remove("open");   
+   }else{
+      btnToggleNav.classList.add("open");
+    }
+  });
+  
+  
+};
+
 
 /*Ida Slut*/
 window.onload = function () {
