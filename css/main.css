@@ -47,23 +47,294 @@ h5{
 
 /*BODY Start*/
 body {
-
 	background-color: #EEEEEE;
     overflow-x: hidden;
     margin 0;
     padding: 0;
     background-color: #eeeeee;
+	overflow: hidden;
+    margin 0;
+    padding: 0;
 }
 /*BODY Slut*/
 
 /*Jonas start*/
+
+/*kalender (START)*/
+
+/*Kalender (SLUT)*/
+
 /*Burgermenu, Headline & box*/
-.menuogbox{
+.kort{
+    justify-self: center;
+    z-index: 1;
+    grid-column-start: 1;
+    grid-row-start: 1; 
     
+}
+
+/*Vejhjælp (START)*/
+.vejfalck{
+    margin-top: 75%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.vejadr{
+    margin-top: 88%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.aabning{
+    margin-top: 102%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.vejtlf{
+    margin-top: 118%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.vejlillebox{
+    margin-top: 43%;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.vejlillemenuogbox{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 60%;
+}
+
+.vejlillelistgrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 9% 10% 5% 55% 5% 10% 10%;
+    grid-template-rows: 8% 7% 7% 7%;
+}
+
+.infobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25%;
+}
+
+
+.vejbox{
+    margin-top: 45%;
+    justify-self: center;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+.vht1{
+    z-index: 4;
+    justify-self: center;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.vejoverskrift{
+    margin-top: 20%;
+    justify-self: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+/*Vejhjælp (SLUT)*/
+
+/*Værksted (START)*/
+.lillemenuogbox{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 105% 100%;
+}
+
+.lillelistgrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 10% 10% 5% 55% 5% 10% 10%;
+    grid-template-rows: 14% 14% 14% 14%;
+}
+
+.lillebox{
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.lt1{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.li1{
+    
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: #0C213E;
+    width: 100%;
+}
+
+.lp1{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+
+.ll1{
+    margin-top: 120%;
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.lt2{
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.li2{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    color: #0C213E;
+    width: 100%;
+}
+
+.lp2{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+.ll2{
+    margin-top: 130%;
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.lt3{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.li3{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    color: #0C213E;
+    width: 100%;
+}
+
+.lp3{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 4;
+}
+
+.ll3{
+    margin-top: 130%;
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+/*Værksted (SLUT)*/
+
+/*Indbakke (START)*/
+.inbox{
+    margin-top: -2%;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.indbakkeliste{
+    margin-top: 70%;
+    justify-self: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.inmenu{
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+/*Indbakke (SLUT)*/
+
+/*DriveSafe (START)*/
+.drives{
+    margin-top: 65%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.aktiv{
+    margin-top: 45%;
+    justify-self: center;
+    z-index: 5;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+/*DriveSafe (SLUT)*/
+
+/*Instruments symbol hjælp (START)*/
+.instru{
+    margin-top: 85%;
+    justify-self: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+/*Instruments symbol hjælp (SLUT)*/
+
+.menuogbox{
+    z-index: 1;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 }
+
 .menu{
     z-index: 1;
     grid-column-start: 1;
@@ -88,6 +359,7 @@ body {
 }
 
 /*Buttons*/
+
 .listgrid{
     display: flex;
     justify-content: center;
@@ -102,8 +374,6 @@ body {
     grid-template-rows: 14% 14% 14% 14% 14%;
 }
 
-/*Instruments symboler*/
-
 /*
 t = tekst
 i = Ikon
@@ -111,17 +381,21 @@ p = Pil
 l = linje
 */
 
+/*Instruments symboler (START)*/
+
 .t1{
     z-index: 1;
     grid-column-start: 4;
     grid-row-start: 1;
 }
+
 .i1{
     grid-column-start: 2;
     grid-row-start: 1;
     color: #0C213E;
     width: 100%;
 }
+
 .p1{
     justify-self: center;
     grid-column-start: 6;
@@ -134,34 +408,41 @@ l = linje
     grid-column-start: 2;
     grid-row-start: 1;
   }
-/*DriveClever*/
+/*Instruments symboler (SLUT)*/
+
+/*DriveClever (START)*/
 .t2{
     grid-column-start: 4;
     grid-row-start: 2;
 }
+
 .i2{
     grid-column-start: 2;
     grid-row-start: 2;
     color: #0C213E;
     width: 100%;
 }
+
 .p2{
     justify-self: center;
     grid-column-start: 6;
     grid-row-start: 2;
 }
+
 .l2{
     margin-top: 150%;
     z-index: 2;
     grid-column-start: 2;
     grid-row-start: 2; 
 }
+/*DriveClever (SLUT)*/
 
-/*DriveSafe*/
+/*DriveSafe (START)*/
 .t3{
     grid-column-start: 4;
     grid-row-start: 3;
 }
+
 .i3{
     
     grid-column-start: 2;
@@ -169,63 +450,76 @@ l = linje
     color: #0C213E;
     width: 100%;
 }
+
 .p3{
     justify-self: center;
     grid-column-start: 6;
     grid-row-start: 3;
 }
+
 .l3{
     margin-top: 120%;
     z-index: 2;
     grid-column-start: 2;
     grid-row-start: 3;
 }
+/*DriveSafe (SLUT)*/
 
-/*Mine dokumenter*/
+
+/*Mine dokumenter (START)*/
 .t4{
     grid-column-start: 4;
     grid-row-start: 4;
 }
+
 .i4{
     grid-column-start: 2;
     grid-row-start: 4;
     color: #0C213E;
     width: 100%;
 }
+
 .p4{
     justify-self: center;
     grid-column-start: 6;
     grid-row-start: 4;
 }
+
 .l4{
     margin-top: 130%;
     z-index: 2;
     grid-column-start: 2;
     grid-row-start: 4;
 }
+/*Mine dokumenter (SLUT)*/
 
-/*Support*/
+/*Support (START)*/
 .t5{
     grid-column-start: 4;
     grid-row-start: 5;
 }
+
 .i5{
     grid-column-start: 2;
     grid-row-start: 5;
     color: #0C213E;
     width: 100%;
 }
+
 .p5{
     justify-self: center;
     grid-column-start: 6;
     grid-row-start: 5;
 }
+
 .l5{
     margin-top: 130%;
     z-index: 2;
     grid-column-start: 2;
     grid-row-start: 5;
 }
+/*Support (SLUT)*/
+
 /*Jonas slut*/
 
 /*Nicoline start*/
@@ -435,7 +729,7 @@ background: #0E294E;
   padding:5px;    
 }
 
-}
+
 
 
 
@@ -571,37 +865,209 @@ a{
 
 
 /*Joachim start*/
+/*Burgermenu, Headline & box*/
 
+.cmenuogbox{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.cmenu{
+    z-index: 1;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.cbox{
+    margin-top: 60%;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.coverskrift{
+    margin-top: 20%;
+    justify-self: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+
+.bilen{
+    margin-top: 90%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.bilnavn {
+  margin-top: 60%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;  
+    
+}
+
+.bilnavn {
+    
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 25px;
+    align-content: center;
+    color: #0C213E;
+    
+}
+
+.motor {
+    margin-top: 72%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;  
+      
+}
+
+.motor {
+    font-family: 'open sans';
+    font-weight: 100;
+    font-size: 20px;
+    align-content: center;
+    color: #0C213E;
+}
+
+.distance {
+     margin-top: 135%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.distance {
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 23px;
+    align-content: center;
+    color: #0C213E;
+}
+
+.kilometer {
+    margin-top: 146%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.kilometer {
+    font-family: 'open sans';
+    font-weight: 100;
+    font-size: 15px;
+    align-content: center;
+    color: #0C213E;
+}
+
+.tilbage {
+     margin-top: 160%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.nummerplade {
+     margin-top: 40%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+/*Buttons*/
+
+.clistgrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70%;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 10% 10% 5% 55% 5% 10% 10%;
+    grid-template-rows: 14% 20% 14% 10% 10%;
+}
+
+/*
+t = tekst
+i = Ikon
+p = Pil
+l = linje
+*/
+
+/*Mine dokumenter (START)*/
+.ct1{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.ci1{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    color: #0C213E;
+    width: 100%;
+}
+
+.cp1{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 4;
+}
+
+.cl1{
+    margin-top: 130%;
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+/*Mine dokumenter (SLUT)*/
+
+/*Support (START)*/
+.ct2{
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+
+.ci2{
+    grid-column-start: 2;
+    grid-row-start: 5;
+    color: #0C213E;
+    width: 100%;
+}
+
+.cp2{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 5;
+}
+
+.cl2{
+    margin-top: 130%;
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+/*Support (SLUT)*/
 /*Joachim slut*/
 
-
 /*Ida start*/
-.navbar{
-    align-items: center;
-    padding: 20px;
-    text-decoration: none;
-    font-family: 'montserrat', 'open sans';
-    font-size: 10px;
-    line-height: 100px;
-    color: #0E294E;
-  
-}
 
-.burger_container{
-    display: block;
-  width: 80px;
-  height: 10px;
-    line-height: 20px;
-  margin-bottom: 5px;
-  position: relative;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
 /*Ida slut*/
