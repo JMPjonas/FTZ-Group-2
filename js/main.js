@@ -1,20 +1,36 @@
-function validateForm() {
-  var x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
+
 /* Ida Start */ 
 
 /*Ida Slut*/
 
 /*Nicoline start*/
-const nummerplade = document.getElementById('nummerplade')
-const password = document.getElementById('adgangskode')
-const input
+//array
+let loginButton = document.getElementById("logindlogin");
+console.log(loginButton);
+
+loginButton.addEventListener("click", validation);
 
 
+function validation (){
+let nummerplade = document.getElementsByClassName('nummerplade')[0].value;   
+let adgangskode = document.getElementsByClassName('adgangskode')[0].value;   
+if(nummerplade=='') {
+    
+ document.getElementsByClassName('nummerplade')[0].placeholder = "Venligst indtast nummer";
+    
+    if (adgangskode == '') {
+        document.getElementsByClassName('adgangskode')[0].placeholder = "Venligst indtast felterne";
+    }
+      
+ }    
+     else if (adgangskode == '') {
+        document.getElementsByClassName('adgangskode')[0].placeholder = "Venligst indtast felterne";
+    }
+    
+    else {
+        location.href = "mycar.html";
+    }
+}
 
 /*Nicoline slut*/
 
