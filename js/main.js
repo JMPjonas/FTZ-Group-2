@@ -22,15 +22,15 @@ const password = document.getElementById('adgangskode')
 
 /* JONAS SLUT*/
 
- var image_tracker='f';
+ let image_tracker='udennummer';
 function change(){
-    var image = document.getElementById ("nummerplade");
-    if (image_tracker=='f') {
-        image.src ='/img/nummerplade2.svg';
-        image_tracker= 't';
+    let billede = document.getElementById ("nummerplade");
+    if (image_tracker=='udennummer') {
+        billede.src ='/img/nummerplade2.svg';
+        image_tracker= 'mednummer';
     } else{
-        image.src = '/img/nummerplade.svg';
-        image_tracker = 'f'
+        billede.src = '/img/nummerplade.svg';
+        image_tracker = 'udennummer'
     }
     
 }
