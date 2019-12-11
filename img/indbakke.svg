@@ -1,18 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="375" height="235.178" viewBox="0 0 375 235.178">
-  <g id="Group_255" data-name="Group 255" transform="translate(-1899 -11865)">
-    <path id="Union_3" data-name="Union 3" d="M45.41,231.493a97.438,97.438,0,0,1-12.91-4.319,80.842,80.842,0,0,1-11.25-5.719,62.544,62.544,0,0,1-9.28-6.933,46.556,46.556,0,0,1-7.01-7.955A34.53,34.53,0,0,1,0,195.987V0H375V235.178H74.848A117.1,117.1,0,0,1,45.41,231.493Z" transform="translate(1899 11865)" fill="#fff"/>
-    <g id="Group_254" data-name="Group 254" transform="translate(1703 11736)">
-      <g id="Rectangle_81" data-name="Rectangle 81" transform="translate(245 286)" fill="#fff" stroke="#0e294e" stroke-width="1">
-        <rect width="284" height="46" rx="18" stroke="none"/>
-        <rect x="0.5" y="0.5" width="283" height="45" rx="17.5" fill="none"/>
-      </g>
-      <g id="Rectangle_84" data-name="Rectangle 84" transform="translate(245 286)" fill="#0e294e" stroke="#707070" stroke-width="1">
-        <rect width="82" height="46" rx="17" stroke="none"/>
-        <rect x="0.5" y="0.5" width="81" height="45" rx="16.5" fill="none"/>
-      </g>
-      <text id="Alle" transform="translate(239 293)" fill="#fff" font-size="20" font-family="OpenSans, Open Sans"><tspan x="30.003" y="21">Alle</tspan></text>
-      <text id="Sendt" transform="translate(428 293)" fill="#0e294e" font-size="20" font-family="OpenSans, Open Sans"><tspan x="20.105" y="21">Sendt</tspan></text>
-      <text id="Ulæste" transform="translate(354 293)" fill="#0e294e" font-size="20" font-family="OpenSans, Open Sans"><tspan x="0" y="21">Ulæste</tspan></text>
-    </g>
-  </g>
+  <path id="Union_5" data-name="Union 5" d="M45.41,231.493a97.438,97.438,0,0,1-12.91-4.319,80.842,80.842,0,0,1-11.25-5.719,62.544,62.544,0,0,1-9.28-6.933,46.556,46.556,0,0,1-7.01-7.955A34.53,34.53,0,0,1,0,195.987V0H375V235.178H74.848A117.1,117.1,0,0,1,45.41,231.493Z" fill="#fff"/>
 </svg>

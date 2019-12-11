@@ -5,7 +5,7 @@
 h1{
     font-family: 'open sans';
     font-weight: 600;
-    font-size: 30px;
+    font-size: 7.9vw;
     align-content: center;
     color: #0C213E;
 }
@@ -21,7 +21,7 @@ h2{
 h3{
     font-family: 'open sans';
     font-weight: 300;
-    font-size: 15px;
+    font-size: 3.9vw;
     align-content: left;
     color: #0C213E; 
 }
@@ -29,7 +29,7 @@ h3{
 h4{
     font-family: 'open sans';
     font-weight: 400;
-    font-size: 15px;
+    font-size: 3.9vw;
     align-content: center;
     text-align: top center;
     color: #0C213E; 
@@ -47,25 +47,363 @@ h5{
 
 /*BODY Start*/
 body {
+    border: none;
 	background-color: #EEEEEE;
 	overflow: hidden;
-    margin 0;
+    margin: 0;
     padding: 0;
 }
+@media only screen and (max-width: 420px) {
+    
+/*Dette er "kommer snart" teksten som først skal komme på skærme der er størrere end 410px i bredden.*/
+.comingsoon{display: none;}
+    
 /*BODY Slut*/
 
 /*Jonas start*/
+/*Grid for hele siden*/
+.menuogbox{
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 13vh auto;
+}
+/*Burgermenu (START)*/
+/*Burgermenu grid align*/
+.menu{
+    border: none;
+    justify-items: end;
+    z-index: 1;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+    
+/*Burgermenu styling af str*/
+.bm{
+    margin-top: 1vh;
+    margin-left: 2vw;
+    width: 14vw;   
+}
+/*Burgermenu (SLUT)*/
+    
+/*Stor boks (START)*/
+/*Boks grid align*/
+.box{
+    justify-self: center;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+    
+/*Stor baggrunds boks styling af str*/
+.storbox{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    justify-self: center;
+    width: 105vw;
+    
+}
+/*Stor boks (SLUT)*/
+    
+/*Overskrift*/
+.overskrift{
+    margin-top: 10vh;
+    justify-self: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+/*Liste Ikon størrelse*/
+.listeikon{
+    width: 10vw;
+}
+
+/*Liste pil størrelse*/
+.pil{
+    width: 2vw;    
+}
+
+/* liste linje */
+hr.linje{
+  border: none;
+  margin-top: 8vh;
+  width: 82vw;
+  height: 0.4vh;
+  background-color: #0E294E;
+  opacity: 32%;
+}
+
+/*Grid til listen*/
+.listgrid{
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: 10vw 10vw 5vw 55vw 5vw 10vw 10vw;
+    grid-template-rows: 8vh 11vh 11vh 11vh 11vh 11vh 5vh;
+}
+
+/*
+t = tekst
+i = Ikon
+p = Pil
+l = linje
+*/
+
+/*Instruments symboler (START)*/
+/*Tekst*/
+.t1{
+    z-index: 1;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+/*Ikon*/
+.i1{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: #0C213E;
+}
+/*Pil*/
+.p1{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+/*Linje*/
+.l1{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+/*Instruments symboler (SLUT)*/
+
+/*DriveClever (START)*/
+/*Tekst*/
+.t2{
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+/*Ikon*/
+.i2{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    color: #0C213E;
+}
+/*Pil*/
+.p2{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+/*Linje*/
+.l2{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 3; 
+}
+/*DriveClever (SLUT)*/
+
+/*DriveSafe (START)*/
+/*Tekst*/
+.t3{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+/*Ikon*/
+.i3{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    color: #0C213E;
+}
+/*pil*/
+.p3{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 4;
+}
+/*Linje*/
+.l3{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+/*DriveSafe (SLUT)*/
+
+
+/*Mine dokumenter (START)*/
+.t4{
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+
+.i4{
+    grid-column-start: 2;
+    grid-row-start: 5;
+    color: #0C213E;
+}
+
+.p4{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 5;
+}
+
+.l4{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+/*Mine dokumenter (SLUT)*/
+
+/*Support (START)*/
+.t5{
+    grid-column-start: 4;
+    grid-row-start: 6;
+}
+
+.i5{
+    grid-column-start: 2;
+    grid-row-start: 6;
+    color: #0C213E;
+}
+
+.p5{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 6;
+}
+
+.l5{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 6;
+}
+/*Support (SLUT)*/
 
 /*Burgermenu, Headline & box*/
 
+/*Div class til at bygge et kort ind i baggrunden på vejhjælps siden.*/
+.kort{
+    justify-self: center;
+    z-index: 1;
+    grid-column-start: 1;
+    grid-row-start: 1; 
+}
+
+/*Vejhjælp (START)*/
+    
+/*Infobox tekstlinje 1*/
+.vejfalck{
+    /*Skupper element ned lodret.*/
+    margin-top: 75%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+/*Infobox tekstlinje 2*/
+.vejadr{
+    margin-top: 88%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+/*Infobox tekstlinje 3*/
+.aabning{
+    margin-top: 102%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+/*Infobox tekstlinje 4*/
+.vejtlf{
+    margin-top: 118%;
+    justify-self: center;
+    z-index: 6;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+/*Specifikke ting til vejhjælps siden (START)*/
+/*Infobox der er i midten*/
+.vejlillebox{
+    margin-top: 43%;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.vejlillemenuogbox{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 60%;
+}
+.vejlillelistgrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: 9% 10% 5% 55% 5% 10% 10%;
+    grid-template-rows: 8% 7% 7% 7%;
+}
+.infobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25%;
+}
+.vejbox{
+    margin-top: 45%;
+    justify-self: center;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+.vht1{
+    z-index: 4;
+    justify-self: center;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+.vejoverskrift{
+    margin-top: 20%;
+    justify-self: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+/*Specifikke ting til vejhjælps siden (SLUT)*/
+
 /*Værksted (START)*/
+/*Grid til den lille baggrunds boks*/
 .lillemenuogbox{
     z-index: 1;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100% 100%;
+    grid-template-rows: 105% 100%;
 }
-
 .lillelistgrid{
     display: flex;
     justify-content: center;
@@ -85,7 +423,6 @@ body {
     grid-row-start: 2;
 }
 
-/*DriveSafe (START)*/
 .lt1{
     grid-column-start: 4;
     grid-row-start: 2;
@@ -111,10 +448,7 @@ body {
     grid-column-start: 2;
     grid-row-start: 2;
 }
-/*DriveSafe (SLUT)*/
 
-
-/*Mine dokumenter (START)*/
 .lt2{
     grid-column-start: 4;
     grid-row-start: 3;
@@ -139,9 +473,7 @@ body {
     grid-column-start: 2;
     grid-row-start: 3;
 }
-/*Mine dokumenter (SLUT)*/
 
-/*Support (START)*/
 .lt3{
     grid-column-start: 4;
     grid-row-start: 4;
@@ -166,7 +498,6 @@ body {
     grid-column-start: 2;
     grid-row-start: 4;
 }
-/*Support (SLUT)*/
 /*Værksted (SLUT)*/
 
 /*Indbakke (START)*/
@@ -196,31 +527,24 @@ body {
 
 /*DriveSafe (START)*/
 .drives{
-    margin-top: 65%;
+    margin-top: 2vh;
     justify-self: center;
     z-index: 4;
     grid-column-start: 1;
-    grid-row-start: 1;
+    grid-row-start: 3;
 }
-
+.dsikon{width: 40vw;}
+    
+/*AktivogInaktiv knap*/
 .aktiv{
-    margin-top: 45%;
+    margin-top: 26vh;
     justify-self: center;
-    z-index: 5;
+    z-index: 7;
     grid-column-start: 1;
-    grid-row-start: 1;
-}
+    grid-row-start: 3;
+}   
+.dsaktiv{width: 50vw;}
 /*DriveSafe (SLUT)*/
-
-/*Kalender (START)*/
-.kalenderliste{
-    margin-top: 80%;
-    justify-self: center;
-    z-index: 3;
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-/*Kalender (SLUT)*/
 
 /*Instruments symbol hjælp (START)*/
 .instru{
@@ -231,199 +555,6 @@ body {
     grid-row-start: 1;
 }
 /*Instruments symbol hjælp (SLUT)*/
-
-.menuogbox{
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-}
-
-.menu{
-    z-index: 1;
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-
-.box{
-    margin-top: 60%;
-    width: 100%;
-    height: 100vh;
-    z-index: 2;
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-
-.overskrift{
-    margin-top: 20%;
-    justify-self: center;
-    z-index: 3;
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-
-/*Buttons*/
-
-.listgrid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70%;
-    z-index: 3;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 10% 10% 5% 55% 5% 10% 10%;
-    grid-template-rows: 14% 14% 14% 14% 14%;
-}
-
-/*
-t = tekst
-i = Ikon
-p = Pil
-l = linje
-*/
-
-/*Instruments symboler (START)*/
-
-.t1{
-    z-index: 1;
-    grid-column-start: 4;
-    grid-row-start: 1;
-}
-
-.i1{
-    grid-column-start: 2;
-    grid-row-start: 1;
-    color: #0C213E;
-    width: 100%;
-}
-
-.p1{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 1;
-}
-
-.l1{
-    margin-top: 100%;
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 1;
-  }
-/*Instruments symboler (SLUT)*/
-
-/*DriveClever (START)*/
-.t2{
-    grid-column-start: 4;
-    grid-row-start: 2;
-}
-
-.i2{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    color: #0C213E;
-    width: 100%;
-}
-
-.p2{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 2;
-}
-
-.l2{
-    margin-top: 150%;
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 2; 
-}
-/*DriveClever (SLUT)*/
-
-/*DriveSafe (START)*/
-.t3{
-    grid-column-start: 4;
-    grid-row-start: 3;
-}
-
-.i3{
-    
-    grid-column-start: 2;
-    grid-row-start: 3;
-    color: #0C213E;
-    width: 100%;
-}
-
-.p3{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 3;
-}
-
-.l3{
-    margin-top: 120%;
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-/*DriveSafe (SLUT)*/
-
-
-/*Mine dokumenter (START)*/
-.t4{
-    grid-column-start: 4;
-    grid-row-start: 4;
-}
-
-.i4{
-    grid-column-start: 2;
-    grid-row-start: 4;
-    color: #0C213E;
-    width: 100%;
-}
-
-.p4{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 4;
-}
-
-.l4{
-    margin-top: 130%;
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 4;
-}
-/*Mine dokumenter (SLUT)*/
-
-/*Support (START)*/
-.t5{
-    grid-column-start: 4;
-    grid-row-start: 5;
-}
-
-.i5{
-    grid-column-start: 2;
-    grid-row-start: 5;
-    color: #0C213E;
-    width: 100%;
-}
-
-.p5{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 5;
-}
-
-.l5{
-    margin-top: 130%;
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 5;
-}
-/*Support (SLUT)*/
-
 /*Jonas slut*/
 
 /*Nicoline start*/
@@ -829,13 +960,96 @@ br{
 
 
 .bilen{
-    margin-top: 85%;
+    margin-top: 90%;
     justify-self: center;
     z-index: 4;
     grid-column-start: 1;
     grid-row-start: 1;
 }
 
+.bilnavn {
+  margin-top: 60%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;  
+    
+}
+
+.bilnavn {
+    
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 25px;
+    align-content: center;
+    color: #0C213E;
+    
+}
+
+.motor {
+    margin-top: 72%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;  
+      
+}
+
+.motor {
+    font-family: 'open sans';
+    font-weight: 100;
+    font-size: 20px;
+    align-content: center;
+    color: #0C213E;
+}
+
+.distance {
+     margin-top: 135%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.distance {
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 23px;
+    align-content: center;
+    color: #0C213E;
+}
+
+.kilometer {
+    margin-top: 146%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.kilometer {
+    font-family: 'open sans';
+    font-weight: 100;
+    font-size: 15px;
+    align-content: center;
+    color: #0C213E;
+}
+
+.tilbage {
+     margin-top: 160%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#nummerplade {
+     margin-top: 40%;
+    justify-self: center;
+    z-index: 4;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
 
 /*Buttons*/
 
@@ -850,7 +1064,7 @@ br{
     z-index: 2;
     display: grid;
     grid-template-columns: 10% 10% 5% 55% 5% 10% 10%;
-    grid-template-rows: 14% 14% 14% 14% 14%;
+    grid-template-rows: 14% 20% 14% 10% 10%;
 }
 
 /*
@@ -914,7 +1128,6 @@ l = linje
 }
 /*Support (SLUT)*/
 /*Joachim slut*/
-
 
 /*Ida start*/
 body{
@@ -1024,3 +1237,16 @@ body{
      
 }
 /*Ida slut*/
+    
+}/*DETTE ER TIL MEDIA QUERY I TOPPEN!*/
+
+@media only screen and (min-width: 420px) {
+    body{ background-color: black;}
+    .menuogbox{display: none;}
+    .comingsoon{
+        margin-top: 100%;
+        justify-self: center;}
+    .comingsoon1{color: white;}
+    
+    }
+    
