@@ -91,6 +91,7 @@ if(nummerplade=='') {
 //Dette stykke gør at jeg kan toggle visse elementer fra og til.
 var toggled = false;
 			function toggle(){
+                //Dette slår id'erne fra.
 				if(!toggled){
 					toggled = true;
 					document.getElementById("a1").style.display = "none";
@@ -103,6 +104,7 @@ var toggled = false;
                     document.getElementById("a8").style.display = "none";
 					return;
 				}
+                //Dette slår id'erne til igen.
 				if(toggled){
 					toggled = false;
 					document.getElementById("a1").style.display = "grid";

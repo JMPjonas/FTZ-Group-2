@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+/*Tekst family "START"*/
+
+/*Headlines (SemiBold)*/
+h1{
+    font-family: 'open sans';
+    font-weight: 600;
+    font-size: 7.9vw;
+    align-content: center;
+    color: #0C213E;
+}
+/*Hvid stor knap "Ring nu" (BOLD)*/
+h2{
+   font-family: 'open sans';
+    font-weight: 700;
+    font-size: 21px;
+    align-content: right;
+    color: #ffffff; 
+}
+/*Knapper (light)*/
+h3{
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 3.9vw;
+    align-content: left;
+    color: #0C213E; 
+}
+/*Tekst felter med regular 15px*/
+h4{
+    font-family: 'open sans';
+    font-weight: 400;
+    font-size: 3.9vw;
+    align-content: center;
+    text-align: top center;
+    color: #0C213E; 
+}
+
+h5{
+    margin-top: 0%;
+    font-family: 'open sans';
+    font-weight: 400;
+    font-size: 20px;
+    align-content: top;
+    color: #ffffff; 
+}
+/*Tekst family "SLUT"*/
+p{    
+    font-family: 'open sans';
+    font-weight: 300;
+}
+/*BODY*/
+body {
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0C213E;
+}
+li {
+  float: left;
+}
+li a {
+  display: grid;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #EEEEEE;
+}
+li a:hover:not(.active) {
+  background-color: #eeeeee;
+  color: #0C213E;
+}
+.active {
+  background-color: #89DCB5;
+  color: #0C213E;
+}
+li.a.h3{
+ font-size: 20px; 
+}
+
+/*Farve siden (START)*/
+.colorsgrid{
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.33vw 14vw 2.66vw 14vw 2.66vw 14vw 2.66vw 14vw 2.66vw 14vw 2.66vw 14vw 1.33vw;
+  grid-template-rows: 6vh 20vh 4vh;
+}
+.farvetekst1{
+    text-align: center;
+    display: grid;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    color: #0C213E;
+}
+.farvetekst2{
+    text-align: center;
+    display: grid;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    color: #0C213E;
+}
+.farvetekst3{
+    text-align: center;
+    display: grid;
+    grid-column-start: 6;
+    grid-row-start: 3;
+    color: #0C213E;
+}
+.farvetekst4{
+    text-align: center;
+    display: grid;
+    grid-column-start: 8;
+    grid-row-start: 3;
+    color: #0C213E;
+}
+.farvetekst5{
+    text-align: center;
+    display: grid;
+    grid-column-start: 10;
+    grid-row-start: 3;
+    color: #0C213E;
+}
+.farvetekst6{
+    text-align: center;
+    display: grid;
+    grid-column-start: 12;
+    grid-row-start: 3;
+    color: #0C213E;
+}
+.farveboks1{
+    display: block;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #0C213E;
+}
+.farveboks2{
+    display: block;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #0084F0;
+}
+.farveboks3{
+    display: block;
+    grid-column-start: 6;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #4B83E6;
+}
+.farveboks4{
+    display: block;
+    grid-column-start: 8;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #89DCB5;
+}
+.farveboks5{
+    display: block;
+    grid-column-start: 10;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+    border: 2px solid #0C213E
+        ;
+}
+.farveboks6{
+    display: block;
+    grid-column-start: 12;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 20%;
+    border-color: black
+}
+/*Farve siden (SLUT)*/
+/*Det store grid*/
+.icongrid{
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+/*Linje style*/
+hr{ 
+  border: none;
+  width: 100vw;
+  height: 0.4vh;
+  background-color: #0E294E;
+  opacity: 32%;
+}
+/*Ikon str.*/
+.icon{
+  width: 35px;
+}
+
+/*Overskrift style*/
+.overskrift{
+  margin: 0;
+  padding: 0;
+  font-family: 'open sans';
+  font-weight: 600;
+  font-size: 30px;
+  color: #0C213E;
+}
+
+/*Overskrifter*/
+.header1{
+  margin-left: 80px;
+  padding: 20px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+    
+}
+.header2{
+  margin-left: 80px;
+  padding: 20px;
+  grid-column-start: 1;
+  grid-row-start: 22;
+    
+}
+/*Linjer*/
+.hr1{
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+.hr2{
+  grid-column-start: 1;
+  grid-row-start: 5;
+}
+.hr3{
+  grid-column-start: 1;
+  grid-row-start: 7;
+}
+.hr4{
+  grid-column-start: 1;
+  grid-row-start: 9;
+}
+.hr5{
+  grid-column-start: 1;
+  grid-row-start: 11;
+}
+.hr6{
+  grid-column-start: 1;
+  grid-row-start: 13;
+}
+.hr7{
+  grid-column-start: 1;
+  grid-row-start: 15;
+}
+.hr8{
+  grid-column-start: 1;
+  grid-row-start: 17;
+}
+.hr9{
+  grid-column-start: 1;
+  grid-row-start: 19;
+}
+.hr10{
+  grid-column-start: 1;
+  grid-row-start: 21;
+}
+.hr11{
+  grid-column-start: 1;
+  grid-row-start: 24;
+}
+.hr12{
+  grid-column-start: 1;
+  grid-row-start: 26;
+}
+.hr13{
+  grid-column-start: 1;
+  grid-row-start: 28;
+}
+
+.grid1{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid2{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 4;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid3{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 6;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid4{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 8;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid5{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 10;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid6{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 12;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid7{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 14;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid8{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 16;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid9{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 18;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid10{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 20;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid11{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 23;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid12{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 25;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+.grid13{
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 27;
+  align-content: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 0.2fr 2fr;
+  grid-template-rows: auto;
+}
+/*Min bil*/
+.i1{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it1{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Mine dokumenter*/
+.i2{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.it2{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+/*Værksted*/
+.i3{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it3{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*DriveSafe*/
+.i4{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it4{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Vejhjælp*/
+.i5{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it5{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Hjælp*/
+.i6{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it6{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Indstillinger*/
+.i7{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it7{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Indbakke*/
+.i8{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it8{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Luk*/
+.i9{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it9{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Pil*/
+.i10{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it10{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Min bil*/
+/*Burgermenu*/
+.i11{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it11{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Mine dokumenter*/
+.i12{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it12{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/*Hjælp*/
+.i13{
+  justify-self: center;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.it13{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
