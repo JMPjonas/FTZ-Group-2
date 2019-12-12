@@ -89,18 +89,7 @@ if(nummerplade=='') {
 /*Nicoline slut*/
 
 /* JONAS START*/
- var image_tracker='dsin';
-function change(){
-    var image = document.getElementById ("dsindikator");
-    if (image_tracker=='dsin') {
-        image.src ='/img/icons/drivesafedeaktiv.svg';
-        image_tracker= 'dsdeak';
-    } else{
-        image.src = '/img/icons/drivesafeaktiv.svg';
-        image_tracker = 'dsin'
-    }
-    
-}
+
 /* JONAS SLUT*/
 
 
@@ -108,9 +97,9 @@ function change(){
 
 /* JOACHIM START*/
 
- let image_tracker='udennummer';
+ var image_tracker='udennummer';
 function change(){
-    let billede = document.getElementById ("nummerplade");
+    let billede = document.getElementById ("nummerboks");
     if (image_tracker=='udennummer') {
         billede.src ='/img/nummerplade2.svg';
         image_tracker= 'mednummer';
@@ -120,5 +109,7 @@ function change(){
     }
     
 }
+
+
 
 /* JOACHIM SLUT*/
