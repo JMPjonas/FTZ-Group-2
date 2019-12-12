@@ -1,5 +1,4 @@
-
-/* Ida Start */ 
+// Ida (START)
 let toggleNavStatus = false; 
 
 let toggleNav = function(){
@@ -52,16 +51,15 @@ window.onload = function (){
 };
 
 
-/*Ida Slut*/
+// Ida (SLUT)
 
-/*Nicoline start*/
+//Nicoline (START)
 //array
 let loginButton = document.getElementById("logindlogin");
 console.log(loginButton);
 
 const nummerplade = document.getElementById('nummerplade')
 const password = document.getElementById('adgangskode')
-
 
 
 loginButton.addEventListener("click", validation);
@@ -87,16 +85,57 @@ if(nummerplade=='') {
         location.href = "mycar.html";
     }
 }
+//Nicoline (SLUT)
 
-/*Nicoline slut*/
+//Jonas (START)
+//Dette stykke gør at jeg kan toggle visse elementer fra og til.
+var toggled = false;
+			function toggle(){
+				if(!toggled){
+					toggled = true;
+					document.getElementById("a1").style.display = "none";
+                    document.getElementById("a2").style.display = "none";
+                    document.getElementById("a3").style.display = "none";
+                    document.getElementById("a4").style.display = "none";
+                    document.getElementById("a5").style.display = "none";
+                    document.getElementById("a6").style.display = "none";
+                    document.getElementById("a7").style.display = "none";
+                    document.getElementById("a8").style.display = "none";
+					return;
+				}
+				if(toggled){
+					toggled = false;
+					document.getElementById("a1").style.display = "grid";
+                    document.getElementById("a2").style.display = "grid";
+                    document.getElementById("a3").style.display = "grid";
+                    document.getElementById("a4").style.display = "grid";
+                    document.getElementById("a5").style.display = "grid";
+                    document.getElementById("a6").style.display = "grid";
+                    document.getElementById("a7").style.display = "grid";
+                    document.getElementById("a8").style.display = "grid";
+					return;
+				}
+			}
+//Dette gør at knappen går fra aktiv til deaktiv.
+ var image_tracker='dsaktiv';
+function swap(){
+    let billede = document.getElementById ("indikator");
+    if (image_tracker=='dsinaktiv') {
+        billede.src ='/img/icons/drivesafeaktiv.svg';
+        image_tracker= 'dsaktiv';
+    } else{
+        billede.src = '/img/icons/drivesafedeaktiv.svg';
+        image_tracker = 'dsinaktiv'
+    }
+    
+}
+//Jonas (SLUT)
 
-/* JONAS START*/
+//Joachim (START)
 
-/* JONAS SLUT*/
-
- let image_tracker='udennummer';
+ var image_tracker='udennummer';
 function change(){
-    let billede = document.getElementById ("nummerplade");
+    let billede = document.getElementById ("nummerboks");
     if (image_tracker=='udennummer') {
         billede.src ='/img/nummerplade2.svg';
         image_tracker= 'mednummer';
@@ -106,10 +145,8 @@ function change(){
     }
     
 }
-        
 
-/* JOACHIM START*/
+var drinks = ["ginhass", "mojito", "Darknstormy"];
+document.getElementById("cocktails").innerHTML=drinks[0]
 
-
-
-/* JOACHIM SLUT*/
+//Joachim (SLUT)
