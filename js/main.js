@@ -89,15 +89,15 @@ if(nummerplade=='') {
 /*Nicoline slut*/
 
 /* JONAS START*/
- var image_tracker='dsak';
+ var image_tracker='dsin';
 function change(){
-    var image = document.getElementById ("dsaktiv");
-    if (image_tracker=='dsak') {
+    var image = document.getElementById ("dsindikator");
+    if (image_tracker=='dsin') {
         image.src ='/img/icons/drivesafedeaktiv.svg';
         image_tracker= 'dsdeak';
     } else{
         image.src = '/img/icons/drivesafeaktiv.svg';
-        image_tracker = 'dsak'
+        image_tracker = 'dsin'
     }
     
 }
