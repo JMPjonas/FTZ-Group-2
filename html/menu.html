@@ -1,73 +1,40 @@
 <!doctype html>
 <html>
 <head>
-    <title>Min bil</title>
+  <title>burgermenu</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel = "stylesheet" type = "text/css" href = "/css/main.css">
-       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       <script src="/js/main.js"></script>
-</head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type = "text/css" href = "/css/main.css">
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+            <script src="/js/main.js" defer></script>
+
+    </head>
 <body>
-      
-<!-- Navigationsbar -->
-<div class="navbar">
-  <li><a class="nav_link" href="mycar.html" target="_blank">Min bil</a></li>
-  <li><a class="nav_link" href="Mydoc.html" target="_blank">Mine dokumenter</a></li>
-  <li><a class="nav_link" href="mechanic.html" target="_blank">Værksted</a></li>
-  <li><a class="nav_link" href="drivesafe.html" target="_blank">DriveSafe</a></li>
-  <li><a class="nav_link" href="roadhelp.html" target="_blank">Vejhjælp</a></li>
-  <li><a class="nav_link" href="help.html" target="_blank">Hjælp</a></li>
-  <li><a class="nav_link" href="settings.html" target="_blank">Indstillinger</a></li>
-  <li><a class="nav_link" href="login.html" target="_blank">Log ud</a></li>
 
-</div>
+ <nav class="navigation"> 
 
-<!-- Burger ikon -->
-<div class="burger_container">
-  <div class="b-menu">
-    <div class="b_menu b_bun__top"></div>
-    <div class="b_menu b_bun__mid"></div>
-    <div class="b_menu b_bun__bottom"></div>
-  </div>
-
-  <!-- menubar top -->
-  <a href="#" class="menubar">Menubar</a>
-</div>
-
-</body>
+<aside class="toggle-sidebar">
+    <div class="btn-toggle-nav" onclick="toggleNav()">
+     <span></span>
+     <span></span>
+     <span></span>
+     </div>
+  <ul>
+     <li><a href="mycar.html"><img class="minbil" src="/img/icons/menu/help.svg">Min bil</a></li>
+     <li><a href="mydoc.html"><img class="minbil" src="/img/icons/menu/help.svg">Mine dokumenter</a></li>
+     <li><a href="mechanic.html"><img class="minbil" src="/img/icons/menu/reflector-vest.svg">Værksted</a></li>
+     <li><a href="drivesafe.html"><img class="minbil" src="/img/icons/menu/help.svg">DriveSafe</a></li>
+     <li><a href="vejhelp.html"><img class="minbil" src="/img/icons/menu/help.svg">Vejhjælp</a></li>
+     <li><a href="help.html"><img class="minbil" src="/img/icons/menu/help.svg">Hjælp</a></li>
+     <li><a href="setting.html"><img class="minbil" src="/img/icons/menu/help.svg">Indstillinger</a></li>
+     <li><a href="login.html"><img class="minbil" src="/img/icons/menu/help.svg">Log ud</a></li> 
+</ul>  
+    </aside>
+</nav>
+    
+    </body>
 </html>
 
 
 
           
-        <a href="mycar.html" class="navbar__link">
-          <span class="material-icons">directions_car</span>Min bil<span class="material-icons">chevron_right</span>
-          </a>
-          
-          <a href="" class="navbar__link">
-          <span class="material-icons">assignment</span>Mine dokumenter<span class="material-icons">chevron_right</span>
-          </a>
-          
-          <a href="#" class="navbar__link">
-          <span class="material-icons">person</span>Værksted<span class="material-icons">chevron_right</span>
-          </a>
-          
-          <a href="#" class="navbar__link">
-          <span class="material-icons">verified_user</span>DriveSafe<span class="material-icons">chevron_right</span>
-          </a>
-          
-          <a href="#" class="navbar__link">
-          <span class="material-icons">directions_car</span>Vejhjælp<span class="material-icons">chevron_right</span>
-          </a>
-          
-          <a href="#" class="navbar__link">
-          <span class="material-icons">contact_support</span>Hjælp<span class="material-icons">chevron_right</span>
-          </a>
-          
-          <a href="#" class="navbar__link">
-          <span class="material-icons">notification_important</span>Indstillinger<span class="material-icons">chevron_right</span>
-          </a>
-        </div>
-          </ul>
