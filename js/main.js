@@ -39,7 +39,7 @@ function skift(){
 
 
 var pattedyr = ["kat", "løve", "Tiger"];
-document.getElementById("hesteracer").innerHTML = hest[2];
+document.getElementById("pattedyr").innerHTML = pattedyr[2];
         
 
 
