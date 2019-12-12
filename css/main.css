@@ -1146,7 +1146,7 @@ l = linje
     left: 8px;
 }
 
-.nav-sidebar{
+.toggle-sidebar{
     position: fixed;
     top: 1; 
     left: 0; 
@@ -1159,20 +1159,21 @@ l = linje
     transition: all 0.5s ease-in-out; 
 }
 
-.nav-sidebar ul{
+.toggle-sidebar ul{
   padding-top: 15px;
   overflow: hidden;
   visibility: hidden; 
     
 }
 
-.nav-sidebar ul li{
+.toggle-sidebar ul li{
  line-height: 40px;
-    list-style: none; 
+    list-style: none;
 }
 
-.nav-sidebar ul li a {
-  display: block; 
+.toggle-sidebar ul li a {
+  display: block;
+    width: 60%;
   height: 100%; 
   padding: 0 10px; 
   text-decoration: none; 
@@ -1186,7 +1187,7 @@ l = linje
 
 }
 
-.nav-sidebar ul li a:hover{
+.toggle-sidebar ul li a:hover{
   background-color: antiquewhite; 
     
 }
