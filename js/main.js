@@ -12,14 +12,21 @@ function validateForm() {
 /*Nicoline start*/
 const nummerplade = document.getElementById('nummerplade')
 const password = document.getElementById('adgangskode')
-
-
-
-
 /*Nicoline slut*/
 
 /* JONAS START*/
-
+ var image_tracker='dsak';
+function change(){
+    var image = document.getElementById ("dsaktiv");
+    if (image_tracker=='dsak') {
+        image.src ='/img/icons/drivesafedeaktiv.svg';
+        image_tracker= 'dsdeak';
+    } else{
+        image.src = '/img/icons/drivesafeaktiv.svg';
+        image_tracker = 'dsak'
+    }
+    
+}
 /* JONAS SLUT*/
 
  var image_tracker='f';

@@ -543,7 +543,7 @@ l = linje
     grid-column-start: 1;
     grid-row-start: 3;
 }   
-.dsaktiv{width: 50vw;}
+#dsaktiv{width: 50vw;}
 /*DriveSafe (SLUT)*/
 
 /*Instruments symbol hjælp (START)*/
