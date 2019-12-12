@@ -561,23 +561,39 @@ l = linje
 
 .forsidelogo{
     grid-column-start: 2;
-    grid-row-start: 1;
-    margin-left: 50%;
-    margin-top: 10%;
+    grid-row-start: ;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 5%;
     
 }
 
+.form1{
+    z-index: 31;
+    margin-top: 50%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-row-gap: 
+}
+
+.form2{
+    z-index: 36; 
+    display: grid;
+    margin-top: 60%;
+    width: 100%;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}    
+
 input[type=nummerplade] {
-  grid-column-start: 2;
-  grid-row-start: 3;
-  width: 100%;
+  width: 95%;
   padding: 12px 20px;
-  margin: 8px 0;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid #0E294E;
   font-family: 'open sans';
-  font-size: 15px;
+  font-size: 20px;
   background-color: #EEEEEE; 
   color: #0E294E;
   font-weight: 400;
@@ -588,160 +604,90 @@ input[type=nummerplade] {
 }
 
 input[type=password] {
-  grid-column-start: 2;
-  grid-row-start: 5;
-  width: 100%;
+width: 95%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin:10px 0;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid #0E294E;
   font-family: 'open sans';
-  font-size: 15px;
+  font-size: 20px;
   background-color: #EEEEEE; 
   color: #0E294E;
   font-weight: 400;
 
 }
 
-.logindlogin{
+#logindlogin{
     text-align: center;
-    grid-column-start: 2;
-    grid-row-start: 7;
     background-color: #0E294E;
     border: none;
     border-radius: 19px;
-    width: 100%;
-    height:100%; 
-    font-size: 50px;
+    width: 95vw;
+    height:8vh; 
+    margin-top: 30vw;
+    font-family: 'open sans';
+    font-weight: 400;
+    font-size: 20px;
+    align-content: top;
+    color: #ffffff;
 }
 
 .opretbruger{
     grid-column-start: 2;
-    grid-row-start: 10;
-    font-size: 15px;
+    grid-row-start: 1;
+    font-size: 20px;
     color: #ffffff;
     font-family: 'open sans';
     font-weight: 400;
     color: #0E294E;
-    
+    text-decoration-line: underline; 
+   
    
 }
 
 .glemtkode{
-    grid-column-start: 3;
-    grid-row-start: 10;
-    font-size: 15px;
+    font-size: 20px;
     color: #ffffff;
     font-family: 'open sans';
     font-weight: 400;
     color: #0E294E;
-    margin-left: -1430%;
+    text-decoration-line: underline;
+    
    
 }
 
-/*
-.line1{
-grid-column-start: 2;
-grid-row-start: 9;
-display: block;
-border-style: inset;
-border-width: 1px;
-margin-right: -2%;
-width= 1000%;
-
-}
-
-.line2{
-grid-row-start: 9;
-grid-row-start 10; 
-display: flex;
-border-style: inset;
-border-width: 1px;
-width: 1000%;
-
-} 
-*/
-
-.logindgrid{
-    z-index: 31;
-    display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-rows: 20em 1em 4em 1em 4em 4em 3em 1em 1em 1em 1em 2em 1em;
-}
-
 .logogrid{
-    z-index: 32;
-    display: grid;
-    grid-template-columns: 10px 200px 200px 10px;
-    grid-template-rows: 10;
-    
-}
-
-/*
-.linegrid{
     z-index: 33;
     display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-rows: 20em 1em 4em 1em 4em 4em 6em 2em 1em 1em 2em 1em;
+    grid-template-columns: 60px auto 60px;
+    grid-template-rows: 10px 100px 10px; 
 }
-*/
-
-
-
-/*
-@media screen and (max-width: 374px) {  
-    
-  }
-*/
-/*Documents*/
 
 
 /*Chat*/
 
-.chatbox{
- margin-left: %
-}
 
 .logochat{
     position: absolute;
-    margin-left: -70%;
+    margin-left: -90%;
+    align-content: center;
     margin-top: 15%;
 }
    
 
 .container{
-  width:100%;
+  width:100vw;
   height: 100%;
   cursor: default;
-  margin: auto;
   overflow-y: scroll;
-}
-
-.container::-webkit-scrollbar{
-width: 3px;
-max-width: 3px;
-height: auto;
-max-height: 8px;
-}
-
-.container::-webkit-scrollbar-thumb{
-background: #f0f0f0;
-border-radius: 5px;
-max-width: 3px;
-}
-.container::-webkit-scrollbar-track {
-background: #0E294E;
-  border-radius:5px;
 }
 
 .Area{
   margin: auto;
-  width:400px;
+  width:300px;
   background-color:rgba(240, 240, 240, 0.2);
   display:table;
-  padding:5px;
-  border-radius:19px;
   margin-bottom:10px;
 }
 .L{   
@@ -749,26 +695,23 @@ background: #0E294E;
 }
 
 .chaticon{
-  width:50px;
-  height:50px;
+  width:35px;
+  height:35px;
   border-radius:50%;
   border:1px solid #0E294E;
-  padding:5px;    
+  padding: 5px;    
 }
 
 .chaticonlady{
-     width:50px;
-  height:50px;
-  border-radius:50%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
   border:1px solid #0E294E;
   padding:5px;    
 }
 
 
-
-
-
-img:hover{
+.chaticon:hover{
     -moz-box-shadow: 0 5px 5px rgba(#0E294E);
 -webkit-box-shadow: 0 5px 5px rgba(14, 41, 78));
 box-shadow: 0 5px 5px rgba(14, 41, 78);
@@ -777,39 +720,52 @@ box-shadow: 0 5px 5px rgba(14, 41, 78);
     transition: all 1.5s;
   cursor:pointer;
 }
+
+chaticonlady:hover{
+    -moz-box-shadow: 0 5px 5px rgba(#0E294E);
+-webkit-box-shadow: 0 5px 5px rgba(14, 41, 78));
+box-shadow: 0 5px 5px rgba(14, 41, 78);
+       -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    transition: all 1.5s;
+  cursor:pointer;
+}
+
 .R{
     float:right;
 }
 .text{
   color: #0E294E;
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 15px;
   font-weight:lighter;
-  line-height: 30px;
-  width:300px;
-  border:2px solid #f0f0f0;
+  border:1px solid #f0f0f0;
   background-color:rgba(255, 255, 255, 0.6);
   margin-top:10px;
-  border-radius:19px;
-  padding:10px;  
+  padding:8px;
+  border-radius: 20px;
+ 
 }
 
 .Area textarea{
-  font-size:18px;
-  width:90%;
-  max-width:90%;
-  min-width:90%;
+  color:#0E294E;
+  font-size:15px;
+  font-family: "open sans";
+  font-weight: 200;
+  max-width: 100%;
+  min-width:100%;
+  max-height:60px;
+  min-height:60px;
+  background-color:#DADADA;
   padding:5%;
   border-radius:5px;
-  border:1px solid #f0f0f1;
-  max-height:50px;
-  height:50px;
-  min-height:50px;
-  background-color:#E3E3E3;
+  border:1px solid #f0f0f1
   color:#0E294E;
   outline:none;
   border:1px solid transparent;
   resize:none;
+
+  
 }
 .Area textarea:focus{
   color:#00000029;
@@ -863,8 +819,8 @@ box-shadow: 0 5px 5px rgba(14, 41, 78);
   font-weight: 200;
   color: #0E294E;
 }
-.L .tooltip:before
-{
+
+.L .tooltip:before{
     content: '';
     position: absolute;
     width: 1px;
@@ -874,6 +830,7 @@ box-shadow: 0 5px 5px rgba(14, 41, 78);
     margin-top: 10px;
     margin-left: -17px;
 }
+    
 .L:hover .tooltip{
   display:block;
 }
@@ -884,8 +841,11 @@ a{
 
 
 .Area input[type=button]{
-  font-size:20px;
+  font-size:15px;
   font-family: "open sans";
+  padding:2px;
+  width: 30%;
+  border-radius:15px;
   padding:5px;
   border-radius:5px;
   border:1px solid #f0f0f1;
@@ -895,6 +855,7 @@ a{
   border:2px solid transparent;
   float:left;
 }
+    
 .Area input[type=button]:hover{
   color:#fff;
   border:1px solid #00000029;
@@ -1131,6 +1092,108 @@ l = linje
 
 /*Ida start*/
 
+.btn-toggle-nav{
+  width:60px;
+  height:45px;
+  position:fixed; 
+  left: 2; 
+  margin: 0vh;
+  margin-top: -6vh; 
+  cursor:pointer;
+}
+
+.btn-toggle-nav > span{
+  width: 35px; 
+  height:9px;
+  border-radius:20px;
+  display:block;
+  background-color:#0E294E;
+  position:absolute;
+  transition: all .25s ease-in-out;
+  transform-origin: left center;
+  -webskit-transform-origin: left center;
+  -o-transform-origin: left center;
+  -moz-transform-origin: left center;
+}
+
+.btn-toggle-nav span:nth-child(1){
+  top:0;
+  left:0;
+}
+.btn-toggle-nav span:nth-child(2){
+  top:18px;
+  left:0;
+}
+.btn-toggle-nav span:nth-child(3){
+  top:36px;
+  left:0;
+}
+
+.btn-toggle-nav.open span:nth-child(1){
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+.btn-toggle-nav.open span:nth-child(2){
+    width:0;
+    opacity: 0; 
+}
+
+.btn-toggle-nav.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
+}
+
+.nav-sidebar{
+    position: fixed;
+    top: 1; 
+    left: 0; 
+    bottom: 0; 
+    width: 0px;
+    height: calc(100vh - 60px); 
+    padding: 0 5px; 
+    background-color: #EEEEEE; 
+    z-index: 1000;
+    transition: all 0.5s ease-in-out; 
+}
+
+.nav-sidebar ul{
+  padding-top: 15px;
+  overflow: hidden;
+  visibility: hidden; 
+    
+}
+
+.nav-sidebar ul li{
+ line-height: 40px;
+    list-style: none; 
+}
+
+.nav-sidebar ul li a {
+  display: block; 
+  height: 100%; 
+  padding: 0 10px; 
+  text-decoration: none; 
+  text-transform: uppercase;
+  color: #0E294E; 
+  font-family: 'montserrat', 'open sans'; 
+  font-size: 20px;
+  white-space: nowrap; 
+  opacity: 0;
+  transition: all 0.5s ease-in-out; 
+
+}
+
+.nav-sidebar ul li a:hover{
+  background-color: antiquewhite; 
+    
+}
+
+.minbil{
+     
+}
 /*Ida slut*/
     
 }/*DETTE ER TIL MEDIA QUERY I TOPPEN!*/
