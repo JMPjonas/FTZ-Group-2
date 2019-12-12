@@ -24,12 +24,12 @@ const password = document.getElementById('adgangskode')
 
 // JOACHIM START
 
- let image_tracker='udennummer';
-function change(){
+ let billeder_finder='udennummer';
+function skift(){
     let billede = document.getElementById ("nummerplade");
-    if (image_tracker=='udennummer') {
+    if (billede_tracker=='udennummer') {
         billede.src ='/img/nummerplade2.svg';
-        image_tracker= 'mednummer';
+        billeder_tracker= 'mednummer';
     } else{
         billede.src = '/img/nummerplade.svg';
         image_tracker = 'udennummer';
