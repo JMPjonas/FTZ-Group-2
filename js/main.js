@@ -2,12 +2,14 @@
 let toggleNavStatus = false; 
 
 let toggleNav = function(){
- let getSidebar = document.querySelector(".nav-sidebar");
- let getSidebarUl = document.querySelector(".nav-sidebar ul");
- let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
+ let getSidebar = document.querySelector(".toggle-sidebar");
+ let getSidebarUl = document.querySelector(".toggle-sidebar ul");
+ let getSidebarLinks = document.querySelectorAll(".toggle-sidebar a");
+
 
  
 if (toggleNavStatus === false) {
+    console.log("Open nav");
   getSidebarUl.style.visibility = "visible";
   getSidebar.style.width = "100%"; 
     
@@ -15,13 +17,12 @@ let arrayLength = getSidebarLinks.length;
 for (let i = 0; i < arrayLength; i++) {
     getSidebarLinks[i].style.opacity = "1"; 
   } 
-    
- toggleNavstatus = true;
-         
+ toggleNavStatus = true;
 }
 
     
 else if (toggleNavStatus === true) {
+    console.log("Closed nav");
     getSidebar.style.width = "0%"; 
     
 let arrayLength = getSidebarLinks.length; 
@@ -31,24 +32,42 @@ for (let i = 0; i < arrayLength; i++) {
 
  getSidebarUl.style.visibility = "hidden"; 
     
- toggleNavstatus = false;
+ toggleNavStatus = false;
          
-     }
+}
+    burgerCross();
 }
 
-window.onload = function (){
-  let btnToggleNav = document.getElementById(".btn-toggle-nav");
-  btnToggleNav.addEventListener("click", e => {
-  
-    if(btnToggleNav.classList.contains("open")){
-      btnToggleNav.classList.remove("open");   
-   }else{
-      btnToggleNav.classList.add("open");
-    }
-  });
-  
-  
-};
+let btnToggleNav = document.getElementsByClassName("btn-toggle-nav");
+
+function burgerCross() {
+    
+    btnToggleNav[0].classList.toggle("open");
+    
+//    if(btnToggleNav.classList.contains("open"))
+//    {
+//      btnToggleNav.classList.remove("open");   
+//   }
+//    else
+//    {
+//      btnToggleNav.classList.add("open");
+//    }
+  };
+
+
+//window.onload = function (){
+//  let btnToggleNav = document.getElementById(".btn-toggle-nav");
+//  btnToggleNav.addEventListener("click", e => {
+//  
+//    if(btnToggleNav.classList.contains("open")){
+//      btnToggleNav.classList.remove("open");   
+//   }else{
+//      btnToggleNav.classList.add("open");
+//    }
+//  });
+//  
+//  
+//};
 
 
 // Ida (SLUT)
