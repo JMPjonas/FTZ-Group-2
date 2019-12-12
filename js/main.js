@@ -16,11 +16,13 @@ const password = document.getElementById('adgangskode')
 
 
 
-/*Nicoline slut*/
+/*Nicoline  slut*/
 
 /* JONAS START*/
 
-/* JONAS SLUT*/
+/* JONAS SLUT */
+
+// JOACHIM START
 
  let image_tracker='udennummer';
 function change(){
@@ -30,13 +32,13 @@ function change(){
         image_tracker= 'mednummer';
     } else{
         billede.src = '/img/nummerplade.svg';
-        image_tracker = 'udennummer'
+        image_tracker = 'udennummer';
     }
     
 }
         
 
-/* JOACHIM START*/
+
 
 
 
