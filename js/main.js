@@ -20,29 +20,21 @@ const password = document.getElementById('adgangskode')
 
 /* JONAS START*/
 
-/* JONAS SLUT */
+/* JONAS SLUT*/
+/* JOACHIM START*/
 
-// JOACHIM START
-
- let billeder_finder='udennummer';
-function skift(){
-    let billede = document.getElementById ("nummerplade");
-    if (billede_tracker=='udennummer') {
+ var image_tracker='udennummer';
+function change(){
+    let billede = document.getElementById ("nummerboks");
+    if (image_tracker=='udennummer') {
         billede.src ='/img/nummerplade2.svg';
-        billeder_tracker= 'mednummer';
+        image_tracker= 'mednummer';
     } else{
         billede.src = '/img/nummerplade.svg';
-        image_tracker = 'udennummer';
+        image_tracker = 'udennummer'
     }
     
 }
-
-
-var pattedyr = ["kat", "løve", "Tiger"];
-document.getElementById("pattedyr").innerHTML = pattedyr[2];
-        
-
-
 
 
 
