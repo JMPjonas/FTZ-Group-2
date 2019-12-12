@@ -584,6 +584,7 @@ l = linje
     width: 100%;
     grid-template-columns: auto auto;
     justify-content: space-between;
+    margin-left: 10%;
 }    
 
 input[type=nummerplade] {
