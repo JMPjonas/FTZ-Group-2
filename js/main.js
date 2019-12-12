@@ -1,5 +1,4 @@
-
-/* Ida Start */ 
+// Ida (START)
 let toggleNavStatus = false; 
 
 let toggleNav = function(){
@@ -52,9 +51,9 @@ window.onload = function (){
 };
 
 
-/*Ida Slut*/
+// Ida (SLUT)
 
-/*Nicoline start*/
+//Nicoline (START)
 //array
 let loginButton = document.getElementById("logindlogin");
 console.log(loginButton);
@@ -86,9 +85,9 @@ if(nummerplade=='') {
         location.href = "mycar.html";
     }
 }
-/*Nicoline slut*/
+//Nicoline (SLUT)
 
-/* JONAS START*/
+//Jonas (START)
 //Dette stykke gør at jeg kan toggle visse elementer fra og til.
 var toggled = false;
 			function toggle(){
@@ -130,11 +129,9 @@ function swap(){
     }
     
 }
-/* JONAS SLUT*/
+//Jonas (SLUT)
 
-  
-
-/* JOACHIM START*/
+//Joachim (START)
 
  var image_tracker='udennummer';
 function change(){
@@ -149,6 +146,7 @@ function change(){
     
 }
 
+var drinks = ["ginhass", "mojito", "Darknstormy"];
+document.getElementById("cocktails").innerHTML=drinks[0]
 
-
-/* JOACHIM SLUT*/
+//Joachim (SLUT)
