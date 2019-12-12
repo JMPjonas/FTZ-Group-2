@@ -36,6 +36,10 @@ function skift(){
     }
     
 }
+
+
+var pattedyr = ["kat", "løve", "Tiger"];
+document.getElementById("hesteracer").innerHTML = hest[2];
         
 
 
