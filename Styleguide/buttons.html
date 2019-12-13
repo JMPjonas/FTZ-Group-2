@@ -13,7 +13,301 @@
   <li><a  class="active" href="buttons.html"><p>Buttons</p></a></li>
   <li><a href="grafisk.html"><p>Grafisk</p></a></li>
 </ul>
+<div class="icongrid">
+<!--Overskrift-->
+    <div class="header1"><p class="overskrift">Buttons</p></div>
+    
+<!--Række 1-->
+    <div class="grid1">
+      <div class="i"><input type="button" id="logindlogin" name="name" value="Log ind"></div>
+      <div class="it">
+          
+          <div class="ryk1">
+          <textarea class="buttont">
+          <input type="button" id="logindlogin" name="name" value="Log ind">
+              
+         <style>
+         #logindlogin{
+          text-align: center;
+          grid-column-start: 2;
+          grid-row-start: 7;
+          background-color: #0E294E;
+          border: none;
+          border-radius: 19px;
+          width: 344px;
+          height: 57px; 
+          font-family: 'open sans';
+          font-weight: 400;
+          font-size: 20px;
+          color: #ffffff; 
+          }
+         </style>
+         </textarea>
+         </div>
+    </div>
+    </div>
+<!--Linje 1-->
+    <hr class="hr1">
+    
+<!--Række 2-->
+    <div class="grid2">
+      <div class="i"><img src="/img/listknapsg.svg"> </div>
+      <div class="it">
+          <div class="ryk2">
+          <textarea class="buttont">
+          <div class="listgrid">
+<!--Overskrift til tekst 1-->
+  <div class="t1"><h3>Mine dokumenter</h3></div>
+    <!--Ikon 1-->
+    <div class="i1"><img class="listeikon" src="/img/icons/file.svg" title="Mine dokumenter" alt="Mine dokumenter"></div>
+      <!--Pil 1-->
+      <div class="p1"><img class="pil" src="/img/icons/knap.svg"></div>
+        <!--Linje 1-->
+        <div class="l1"><hr class="linje"></div>
+</div>         
+          <style>
+/*Grid til listen*/
+.listgrid{
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: 10vw 10vw 5vw 55vw 5vw 10vw 10vw;
+    grid-template-rows: 8vh 11vh 11vh 11vh 11vh 11vh 5vh;
+}
 
+/*Liste Ikon størrelse*/
+.listeikon{
+    width: 10vw;
+}
 
+/*Liste pil størrelse*/
+.pil{
+    width: 2vw;    
+}
+
+/* liste linje */
+hr.linje{
+  border: none;
+  margin-top: 8vh;
+  width: 82vw;
+  height: 0.4vh;
+  background-color: #0E294E;
+  opacity: 32%;
+}
+    
+/*
+t = tekst
+i = Ikon
+p = Pil
+l = linje
+*/
+
+/*Instruments symboler (START)*/
+/*Tekst*/
+.t1{
+    z-index: 1;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+/*Ikon*/
+.i1{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: #0C213E;
+}
+/*Pil*/
+.p1{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+/*Linje*/
+.l1{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }           
+</style>
+          </textarea>
+          </div>
+    </div>
+    </div>
+<!--Linje 2-->
+    <hr class="hr2">
+    
+<!--Række 3-->
+    <div class="grid3">
+      <div class="i"><div class="i"><img src="/img/icons/bmicon.svg"></div></div>
+      <div class="it">
+          <div class="ryk3">
+          <textarea class="buttont">
+           <nav class="navigation"> 
+
+<aside class="toggle-sidebar">
+    <div class="btn-toggle-nav" onclick="toggleNav()">
+     <span></span>
+     <span></span>
+     <span></span>
+     </div>
+  <ul>
+     <div class="indbakken"><img src="/img/icons/menu/indbakke.svg"></div>
+     <li><a href="mycar.html"><img class="minbil" src="/img/icons/menu/help.svg">Min bil</a></li>
+     <li><a href="mydoc.html"><img class="minbil" src="/img/icons/menu/help.svg">Mine dokumenter</a></li>
+     <li><a href="mechanic.html"><img class="minbil" src="/img/icons/menu/reflector-vest.svg">Værksted</a></li>
+     <li><a href="drivesafe.html"><img class="minbil" src="/img/icons/menu/help.svg">DriveSafe</a></li>
+     <li><a href="vejhelp.html"><img class="minbil" src="/img/icons/menu/help.svg">Vejhjælp</a></li>
+     <li><a href="help.html"><img class="minbil" src="/img/icons/menu/help.svg">Hjælp</a></li>
+     <li><a href="setting.html"><img class="minbil" src="/img/icons/menu/help.svg">Indstillinger</a></li>
+     <li><a href="login.html"><img class="minbil" src="/img/icons/menu/help.svg">Log ud</a></li> 
+</ul>  
+    </aside>
+</nav>
+    <style>
+    .indbakken{
+  position: absolute;
+  z-index: 25;    
+  margin-left: 60%;
+  margin-top: -20%;
+}
+.btn-toggle-nav{
+  width:60px;
+  height:45px;
+  position:fixed; 
+  left: 2; 
+  margin: 0vh;
+  margin-top: -6vh; 
+  cursor:pointer;
+}
+
+.btn-toggle-nav > span{
+  width: 60px; 
+  height:9px;
+  border-radius:20px;
+  display:block;
+  background-color:#0E294E;
+  position:absolute;
+  transition: all .25s ease-in-out;
+  transform-origin: left center;
+  -webskit-transform-origin: left center;
+  -o-transform-origin: left center;
+  -moz-transform-origin: left center;
+}
+
+.btn-toggle-nav span:nth-child(1){
+  top:0;
+  left:0;
+}
+.btn-toggle-nav span:nth-child(2){
+  top:18px;
+  left:0;
+}
+.btn-toggle-nav span:nth-child(3){
+  top:36px;
+  left:0;
+}
+
+.btn-toggle-nav.open span:nth-child(1){
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+.btn-toggle-nav.open span:nth-child(2){
+    width:0;
+    opacity: 0; 
+}
+
+.btn-toggle-nav.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
+}
+
+.toggle-sidebar{
+    position: fixed;
+    top: 1; 
+    left: 0; 
+    bottom: 0; 
+    width: 0px;
+    height: calc(100vh - 60px); 
+    padding: 0 5px; 
+    background-color: #EEEEEE; 
+    z-index: 1000;
+    transition: all 0.5s ease-in-out; 
+}
+
+.toggle-sidebar ul{
+  padding-top: 15px;
+  overflow: hidden;
+  visibility: hidden; 
+    
+}
+
+.toggle-sidebar ul li{
+ line-height: 40px;
+    list-style: none;
+}
+
+.toggle-sidebar ul li a {
+  display: block;
+    width: 60%;
+  height: 100%; 
+  padding: 0 10px; 
+  text-decoration: none; 
+  text-transform: uppercase;
+  color: #0E294E; 
+  font-family: 'montserrat', 'open sans'; 
+  font-size: 20px;
+  white-space: nowrap; 
+  opacity: 0;
+  transition: all 0.5s ease-in-out; 
+
+}
+
+.toggle-sidebar ul li a:hover{
+  background-color: antiquewhite; 
+    
+}
+
+.minbil{
+     
+}
+    </style>
+              
+         </textarea>
+          </div>
+    </div>
+    </div>
+<!--Linje 3-->
+    <hr class="hr3">
+    
+<!--Række 4-->
+    <div class="grid4">
+      <div class="i"><a href="#" onclick="location.href='.html'" class="opretbruger">Glemt adgangskode</a></div>
+      <div class="it">
+          <div class="ryk4">
+          <textarea class="buttont">
+          <a href="#" onclick="location.href='.html'" class="opretbruger">Glemt adgangskode</a> 
+          <style>
+          .opretbruger{
+    font-size: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'open sans';
+    font-weight: 400;
+    color: #0E294E;
+    text-decoration-line: underline; 
+}
+          </style>
+         </textarea>
+          </div>
+         </div>
+    </div>
+<!--Linje 4-->
+    <hr class="hr4">
+</div>
 </body>
 </html>

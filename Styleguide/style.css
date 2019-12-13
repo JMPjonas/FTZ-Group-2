@@ -195,13 +195,6 @@ li.a.h3{
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
-.icongrid2{
-/*  align-content: center;*/
-  display: grid;
-/*  align-items: center;*/
-  grid-template-columns: 1fr;
-  grid-template-rows: 100%;
-}
 /*Det store grid (SLUT)*/
 
 /*Linje style (START)*/
@@ -998,10 +991,6 @@ hr{
 }
 /*Lille grid (SLUT)*/
 
-
-
-
-
 /*Linjer*/
 .hr1{
   grid-column-start: 1;
@@ -1268,232 +1257,121 @@ hr{
   grid-row-start: 145;
 }
 
-/*Grid for hele siden*/
-.menuogbox{
-    grid-column-start: 1;
-    grid-row-start:1;
+.buttont{
+    display: block;
+    width: 250px;
+    height: 200px;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textarea;
+    background-color: white;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin: 0em;
+    font: 400 11px system-ui;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 2px;
+}
+
+#logindlogin{
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 7;
+    background-color: #0E294E;
     border: none;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 13vh auto;
+    border-radius: 19px;
+    width: 344px;
+    height: 57px; 
+    font-family: 'open sans';
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff; 
 }
-/*Burgermenu (START)*/
-/*Burgermenu grid align*/
-.menu{
-    border: none;
-    justify-items: end;
-    z-index: 1;
-    grid-column-start: 1;
-    grid-row-start: 1;
+
+.opretbruger{
+    font-size: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'open sans';
+    font-weight: 400;
+    color: #0E294E;
+    text-decoration-line: underline; 
 }
-    
-/*Burgermenu styling af str*/
-.bm{
-    margin-top: 1vh;
-    margin-left: 2vw;
-    width: 14vw;   
-}
-/*Burgermenu (SLUT)*/
-    
-/*Stor boks (START)*/
-/*Boks grid align*/
-.box{
-    justify-self: center;
+
+/*Tekst*/
+.t1{
+    margin-top: 20px;
     z-index: 2;
-    grid-column-start: 1;
-    grid-row-start: 3;
 }
-    
-/*Stor baggrunds boks styling af str*/
-.storbox{
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-end;
-    justify-self: center;
-    width: 105vw;
-    
-}
-/*Stor boks (SLUT)*/
-    
-/*Overskrift*/
-.overskrift{
-    margin-top: 10vh;
-    justify-self: center;
+/*Ikon*/
+i1{
     z-index: 3;
-    grid-column-start: 1;
-    grid-row-start: 1;
+    color: #0C213E;
 }
-
-/*Liste Ikon størrelse*/
-.listeikon{
-    width: 10vw;
+/*Pil*/
+.p1{
+    margin-left: 50px;
+    z-index: 4;
+    justify-self: center;
 }
+/*Linje*/
+.l1{
+    z-index: 1;
+  }
 
-/*Liste pil størrelse*/
-.pil{
-    width: 2vw;    
-}
-
-/* liste linje */
 hr.linje{
   border: none;
-  margin-top: 8vh;
-  width: 82vw;
-  height: 0.4vh;
+  width: 250px;
+  height: 3px;
   background-color: #0E294E;
   opacity: 32%;
 }
 
 /*Grid til listen*/
-.listgrid{
-    max-width: 20%;
-    max-height: auto;
-    display: block;
-    align-items: center;
-    z-index: 3;
-    grid-column-start: 1;
-    grid-row-start: 3;
-    display: grid;
-    grid-template-columns: 10vw 10vw 5vw 55vw 5vw 10vw 10vw;
-    grid-template-rows: 8vh 11vh 11vh 11vh 11vh 11vh 5vh;
+
+/*Liste Ikon størrelse*/
+.listeikon{
+    width: 35px;
 }
 
-/*
-t = tekst
-i = Ikon
-p = Pil
-l = linje
-*/
-
-/*Instruments symboler (START)*/
-/*Tekst*/
-.t1{
-    z-index: 1;
-    grid-column-start: 4;
-    grid-row-start: 2;
-}
-/*Ikon*/
-.i1{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    color: #0C213E;
-}
-/*Pil*/
-.p1{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 2;
-}
-/*Linje*/
-.l1{
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 2;
-  }
-/*Instruments symboler (SLUT)*/
-
-/*DriveClever (START)*/
-/*Tekst*/
-.t2{
-    grid-column-start: 4;
-    grid-row-start: 3;
-}
-/*Ikon*/
-.i2{
-    grid-column-start: 2;
-    grid-row-start: 3;
-    color: #0C213E;
-}
-/*Pil*/
-.p2{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 3;
-}
-/*Linje*/
-.l2{
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 3; 
-}
-/*DriveClever (SLUT)*/
-
-/*DriveSafe (START)*/
-/*Tekst*/
-.t3{
-    grid-column-start: 4;
-    grid-row-start: 4;
-}
-/*Ikon*/
-.i3{
-    grid-column-start: 2;
-    grid-row-start: 4;
-    color: #0C213E;
-}
-/*pil*/
-.p3{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 4;
-}
-/*Linje*/
-.l3{
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 4;
-}
-/*DriveSafe (SLUT)*/
-
-
-/*Mine dokumenter (START)*/
-.t4{
-    grid-column-start: 4;
-    grid-row-start: 5;
+/*Liste pil størrelse*/
+.pil{
+    width: 10px;    
 }
 
-.i4{
-    grid-column-start: 2;
-    grid-row-start: 5;
-    color: #0C213E;
+.tekst{
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 14px;
+    align-content: left;
+    color: #0C213E; 
+    margin-left: 50px;
+}
+.opretbruger{
+    font-size: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'open sans';
+    font-weight: 400;
+    color: #0E294E;
+    text-decoration-line: underline; 
 }
 
-.p4{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 5;
-}
-
-.l4{
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 5;
-}
-/*Mine dokumenter (SLUT)*/
-
-/*Support (START)*/
-.t5{
-    grid-column-start: 4;
-    grid-row-start: 6;
-}
-
-.i5{
-    grid-column-start: 2;
-    grid-row-start: 6;
-    color: #0C213E;
-}
-
-.p5{
-    justify-self: center;
-    grid-column-start: 6;
-    grid-row-start: 6;
-}
-
-.l5{
-    z-index: 2;
-    grid-column-start: 2;
-    grid-row-start: 6;
-}
-/*Support (SLUT)*/
+.ryk1{margin-left: 100px;}
+.ryk2{margin-left: 145px;}
+.ryk3{margin-left: 290px;}
+.ryk4{margin-left: 290px;}
