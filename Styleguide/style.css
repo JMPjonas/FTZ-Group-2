@@ -5,7 +5,7 @@
 h1{
     font-family: 'open sans';
     font-weight: 600;
-    font-size: 7.9vw;
+    font-size: 30px;
     align-content: center;
     color: #0C213E;
 }
@@ -21,7 +21,7 @@ h2{
 h3{
     font-family: 'open sans';
     font-weight: 300;
-    font-size: 3.9vw;
+    font-size: 15px;
     align-content: left;
     color: #0C213E; 
 }
@@ -29,18 +29,18 @@ h3{
 h4{
     font-family: 'open sans';
     font-weight: 400;
-    font-size: 3.9vw;
+    font-size: 15px;
     align-content: center;
     text-align: top center;
     color: #0C213E; 
 }
 
 h5{
-    margin-top: 0%;
+    margin: 0;
+    padding: 0;
     font-family: 'open sans';
     font-weight: 400;
     font-size: 20px;
-    align-content: top;
     color: #ffffff; 
 }
 /*Tekst family "SLUT"*/
@@ -195,6 +195,13 @@ li.a.h3{
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
+.icongrid2{
+/*  align-content: center;*/
+  display: grid;
+/*  align-items: center;*/
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+}
 /*Det store grid (SLUT)*/
 
 /*Linje style (START)*/
@@ -212,6 +219,13 @@ hr{
   width: 35px;
 }
 /*Ikon str. (SLUT)*/
+
+/*Grafisk (START)*/
+.grafik{
+    margin-left: 50px;
+    width:375px;
+}
+/*Grafisk (SLUT*/
 
 /*Overskrift style (START)*/
 .overskrift{
@@ -1254,3 +1268,232 @@ hr{
   grid-row-start: 145;
 }
 
+/*Grid for hele siden*/
+.menuogbox{
+    grid-column-start: 1;
+    grid-row-start:1;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 13vh auto;
+}
+/*Burgermenu (START)*/
+/*Burgermenu grid align*/
+.menu{
+    border: none;
+    justify-items: end;
+    z-index: 1;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+    
+/*Burgermenu styling af str*/
+.bm{
+    margin-top: 1vh;
+    margin-left: 2vw;
+    width: 14vw;   
+}
+/*Burgermenu (SLUT)*/
+    
+/*Stor boks (START)*/
+/*Boks grid align*/
+.box{
+    justify-self: center;
+    z-index: 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+    
+/*Stor baggrunds boks styling af str*/
+.storbox{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    justify-self: center;
+    width: 105vw;
+    
+}
+/*Stor boks (SLUT)*/
+    
+/*Overskrift*/
+.overskrift{
+    margin-top: 10vh;
+    justify-self: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+/*Liste Ikon størrelse*/
+.listeikon{
+    width: 10vw;
+}
+
+/*Liste pil størrelse*/
+.pil{
+    width: 2vw;    
+}
+
+/* liste linje */
+hr.linje{
+  border: none;
+  margin-top: 8vh;
+  width: 82vw;
+  height: 0.4vh;
+  background-color: #0E294E;
+  opacity: 32%;
+}
+
+/*Grid til listen*/
+.listgrid{
+    max-width: 20%;
+    max-height: auto;
+    display: block;
+    align-items: center;
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: 10vw 10vw 5vw 55vw 5vw 10vw 10vw;
+    grid-template-rows: 8vh 11vh 11vh 11vh 11vh 11vh 5vh;
+}
+
+/*
+t = tekst
+i = Ikon
+p = Pil
+l = linje
+*/
+
+/*Instruments symboler (START)*/
+/*Tekst*/
+.t1{
+    z-index: 1;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+/*Ikon*/
+.i1{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: #0C213E;
+}
+/*Pil*/
+.p1{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+/*Linje*/
+.l1{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+/*Instruments symboler (SLUT)*/
+
+/*DriveClever (START)*/
+/*Tekst*/
+.t2{
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+/*Ikon*/
+.i2{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    color: #0C213E;
+}
+/*Pil*/
+.p2{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+/*Linje*/
+.l2{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 3; 
+}
+/*DriveClever (SLUT)*/
+
+/*DriveSafe (START)*/
+/*Tekst*/
+.t3{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+/*Ikon*/
+.i3{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    color: #0C213E;
+}
+/*pil*/
+.p3{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 4;
+}
+/*Linje*/
+.l3{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+/*DriveSafe (SLUT)*/
+
+
+/*Mine dokumenter (START)*/
+.t4{
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+
+.i4{
+    grid-column-start: 2;
+    grid-row-start: 5;
+    color: #0C213E;
+}
+
+.p4{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 5;
+}
+
+.l4{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+/*Mine dokumenter (SLUT)*/
+
+/*Support (START)*/
+.t5{
+    grid-column-start: 4;
+    grid-row-start: 6;
+}
+
+.i5{
+    grid-column-start: 2;
+    grid-row-start: 6;
+    color: #0C213E;
+}
+
+.p5{
+    justify-self: center;
+    grid-column-start: 6;
+    grid-row-start: 6;
+}
+
+.l5{
+    z-index: 2;
+    grid-column-start: 2;
+    grid-row-start: 6;
+}
+/*Support (SLUT)*/
