@@ -89,12 +89,12 @@ var toggled = false;
 //Dette gør at knappen går fra aktiv til deaktiv.
  var image_tracker='dsaktiv';
 function swap(){
-    let billede = document.getElementById ("indikator");
+    let image = document.getElementById ("indikator");
     if (image_tracker=='dsinaktiv') {
-        billede.src ='/img/icons/drivesafeaktiv.svg';
+        image.src ='/img/icons/drivesafeaktiv.svg';
         image_tracker= 'dsaktiv';
     } else{
-        billede.src = '/img/icons/drivesafedeaktiv.svg';
+        image.src = '/img/icons/drivesafedeaktiv.svg';
         image_tracker = 'dsinaktiv'
     }
     
