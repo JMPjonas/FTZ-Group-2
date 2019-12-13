@@ -26,12 +26,8 @@ console.log("drink");
 let loginButton = document.getElementById("logindlogin");
 console.log(loginButton);
 
-const nummerplade = document.getElementById('nummerplade')
-const password = document.getElementById('adgangskode')
-
 
 loginButton.addEventListener("click", validation);
-
 
 function validation (){
 let nummerplade = document.getElementsByClassName('nummerplade')[0].value;   
