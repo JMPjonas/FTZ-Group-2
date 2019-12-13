@@ -5,7 +5,7 @@
 h1{
     font-family: 'open sans';
     font-weight: 600;
-    font-size: 7.9vw;
+    font-size: 30px;
     align-content: center;
     color: #0C213E;
 }
@@ -21,7 +21,7 @@ h2{
 h3{
     font-family: 'open sans';
     font-weight: 300;
-    font-size: 3.9vw;
+    font-size: 15px;
     align-content: left;
     color: #0C213E; 
 }
@@ -29,18 +29,18 @@ h3{
 h4{
     font-family: 'open sans';
     font-weight: 400;
-    font-size: 3.9vw;
+    font-size: 15px;
     align-content: center;
     text-align: top center;
     color: #0C213E; 
 }
 
 h5{
-    margin-top: 0%;
+    margin: 0;
+    padding: 0;
     font-family: 'open sans';
     font-weight: 400;
     font-size: 20px;
-    align-content: top;
     color: #ffffff; 
 }
 /*Tekst family "SLUT"*/
@@ -212,6 +212,13 @@ hr{
   width: 35px;
 }
 /*Ikon str. (SLUT)*/
+
+/*Grafisk (START)*/
+.grafik{
+    margin-left: 50px;
+    width:375px;
+}
+/*Grafisk (SLUT*/
 
 /*Overskrift style (START)*/
 .overskrift{
@@ -984,10 +991,6 @@ hr{
 }
 /*Lille grid (SLUT)*/
 
-
-
-
-
 /*Linjer*/
 .hr1{
   grid-column-start: 1;
@@ -1254,3 +1257,121 @@ hr{
   grid-row-start: 145;
 }
 
+.buttont{
+    display: block;
+    width: 250px;
+    height: 200px;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textarea;
+    background-color: white;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin: 0em;
+    font: 400 11px system-ui;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 2px;
+}
+
+#logindlogin{
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 7;
+    background-color: #0E294E;
+    border: none;
+    border-radius: 19px;
+    width: 344px;
+    height: 57px; 
+    font-family: 'open sans';
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff; 
+}
+
+.opretbruger{
+    font-size: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'open sans';
+    font-weight: 400;
+    color: #0E294E;
+    text-decoration-line: underline; 
+}
+
+/*Tekst*/
+.t1{
+    margin-top: 20px;
+    z-index: 2;
+}
+/*Ikon*/
+i1{
+    z-index: 3;
+    color: #0C213E;
+}
+/*Pil*/
+.p1{
+    margin-left: 50px;
+    z-index: 4;
+    justify-self: center;
+}
+/*Linje*/
+.l1{
+    z-index: 1;
+  }
+
+hr.linje{
+  border: none;
+  width: 250px;
+  height: 3px;
+  background-color: #0E294E;
+  opacity: 32%;
+}
+
+/*Grid til listen*/
+
+/*Liste Ikon størrelse*/
+.listeikon{
+    width: 35px;
+}
+
+/*Liste pil størrelse*/
+.pil{
+    width: 10px;    
+}
+
+.tekst{
+    font-family: 'open sans';
+    font-weight: 300;
+    font-size: 14px;
+    align-content: left;
+    color: #0C213E; 
+    margin-left: 50px;
+}
+.opretbruger{
+    font-size: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'open sans';
+    font-weight: 400;
+    color: #0E294E;
+    text-decoration-line: underline; 
+}
+
+.ryk1{margin-left: 100px;}
+.ryk2{margin-left: 145px;}
+.ryk3{margin-left: 290px;}
+.ryk4{margin-left: 290px;}
