@@ -1,78 +1,27 @@
-// Ida (START)
-let toggleNavStatus = false; 
+/* JOACHIM START*/
 
-let toggleNav = function(){
- let getSidebar = document.querySelector(".toggle-sidebar");
- let getSidebarUl = document.querySelector(".toggle-sidebar ul");
- let getSidebarLinks = document.querySelectorAll(".toggle-sidebar a");
-
-
- 
-if (toggleNavStatus === false) {
-    console.log("Open nav");
-  getSidebarUl.style.visibility = "visible";
-  getSidebar.style.width = "100%"; 
+ var image_tracker='udennummer';
+function change(){
+    let billede = document.getElementById ("nummerboks");
+    if (image_tracker=='udennummer') {
+        billede.src ='/img/nummerplade2.svg';
+        image_tracker= 'mednummer';
+    } else{
+        billede.src = '/img/nummerplade.svg';
+        image_tracker = 'udennummer';
+    }
     
-let arrayLength = getSidebarLinks.length; 
-for (let i = 0; i < arrayLength; i++) {
-    getSidebarLinks[i].style.opacity = "1"; 
-  } 
- toggleNavStatus = true;
 }
 
-    
-else if (toggleNavStatus === true) {
-    console.log("Closed nav");
-    getSidebar.style.width = "0%"; 
-    
-let arrayLength = getSidebarLinks.length; 
-for (let i = 0; i < arrayLength; i++) {
-    getSidebarLinks[i].style.opacity = "0";
-  } 
+var drink = ["ginhass", "mojito", "Darknstormy"];
+document.getElementById("cocktails").innerHTML=drink[0];
+console.log("drink");
+     
 
- getSidebarUl.style.visibility = "hidden"; 
-    
- toggleNavStatus = false;
-         
-}
-    burgerCross();
-}
-
-let btnToggleNav = document.getElementsByClassName("btn-toggle-nav");
-
-function burgerCross() {
-    
-    btnToggleNav[0].classList.toggle("open");
-    
-//    if(btnToggleNav.classList.contains("open"))
-//    {
-//      btnToggleNav.classList.remove("open");   
-//   }
-//    else
-//    {
-//      btnToggleNav.classList.add("open");
-//    }
-  };
+/* JOACHIM SLUT*/
 
 
-//window.onload = function (){
-//  let btnToggleNav = document.getElementById(".btn-toggle-nav");
-//  btnToggleNav.addEventListener("click", e => {
-//  
-//    if(btnToggleNav.classList.contains("open")){
-//      btnToggleNav.classList.remove("open");   
-//   }else{
-//      btnToggleNav.classList.add("open");
-//    }
-//  });
-//  
-//  
-//};
-
-
-// Ida (SLUT)
-
-//Nicoline (START)
+/*Nicoline start*/
 //array
 let loginButton = document.getElementById("logindlogin");
 console.log(loginButton);
@@ -104,68 +53,77 @@ if(nummerplade=='') {
         location.href = "mycar.html";
     }
 }
-//Nicoline (SLUT)
+/*Nicoline slut*/
 
-//Jonas (START)
-//Dette stykke gør at jeg kan toggle visse elementer fra og til.
-var toggled = false;
-			function toggle(){
-				if(!toggled){
-					toggled = true;
-					document.getElementById("a1").style.display = "none";
-                    document.getElementById("a2").style.display = "none";
-                    document.getElementById("a3").style.display = "none";
-                    document.getElementById("a4").style.display = "none";
-                    document.getElementById("a5").style.display = "none";
-                    document.getElementById("a6").style.display = "none";
-                    document.getElementById("a7").style.display = "none";
-                    document.getElementById("a8").style.display = "none";
-					return;
-				}
-				if(toggled){
-					toggled = false;
-					document.getElementById("a1").style.display = "grid";
-                    document.getElementById("a2").style.display = "grid";
-                    document.getElementById("a3").style.display = "grid";
-                    document.getElementById("a4").style.display = "grid";
-                    document.getElementById("a5").style.display = "grid";
-                    document.getElementById("a6").style.display = "grid";
-                    document.getElementById("a7").style.display = "grid";
-                    document.getElementById("a8").style.display = "grid";
-					return;
-				}
-			}
-//Dette gør at knappen går fra aktiv til deaktiv.
- var image_tracker='dsaktiv';
+/* JONAS START*/
+ var image_tracker='dsinaktiv';
 function swap(){
     let billede = document.getElementById ("indikator");
     if (image_tracker=='dsinaktiv') {
-        billede.src ='/img/icons/drivesafeaktiv.svg';
+        billede.src ='/img/icons/drivesafedeaktiv.svg';
         image_tracker= 'dsaktiv';
+        document.getElementById(kunaktiv).style.display=="none";
     } else{
-        billede.src = '/img/icons/drivesafedeaktiv.svg';
+        billede.src = '/img/icons/drivesafeaktiv.svg';
         image_tracker = 'dsinaktiv'
     }
     
 }
-//Jonas (SLUT)
+/* JONAS SLUT*/
 
-//Joachim (START)
+/* JONAS SLUT*/
 
- var image_tracker='udennummer';
-function change(){
-    let billede = document.getElementById ("nummerboks");
-    if (image_tracker=='udennummer') {
-        billede.src ='/img/nummerplade2.svg';
-        image_tracker= 'mednummer';
-    } else{
-        billede.src = '/img/nummerplade.svg';
-        image_tracker = 'udennummer'
-    }
+/* Ida Start */ 
+let toggleNavStatus = false; 
+
+let toggleNav = function(){
+ let getSidebar = document.querySelector(".nav-sidebar");
+ let getSidebarUl = document.querySelector(".nav-sidebar ul");
+ let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
+
+ 
+if (toggleNavStatus === false) {
+  getSidebarUl.style.visibility = "visible";
+  getSidebar.style.width = "100%"; 
     
+let arrayLength = getSidebarLinks.length; 
+for (let i = 0; i < arrayLength; i++) {
+    getSidebarLinks[i].style.opacity = "1"; 
+  } 
+    
+ toggleNavstatus = true;
+         
 }
 
-var drinks = ["ginhass", "mojito", "Darknstormy"];
-document.getElementById("cocktails").innerHTML=drinks[0]
+    
+else if (toggleNavStatus === true) {
+    getSidebar.style.width = "0%"; 
+    
+let arrayLength = getSidebarLinks.length; 
+for (let i = 0; i < arrayLength; i++) {
+    getSidebarLinks[i].style.opacity = "0";
+  } 
 
-//Joachim (SLUT)
+ getSidebarUl.style.visibility = "hidden"; 
+    
+ toggleNavstatus = false;
+         
+     }
+}
+
+window.onload = function (){
+  let btnToggleNav = document.getElementById(".btn-toggle-nav");
+  btnToggleNav.addEventListener("click", e => {
+  
+    if(btnToggleNav.classList.contains("open")){
+      btnToggleNav.classList.remove("open");   
+   }else{
+      btnToggleNav.classList.add("open");
+    }
+  });
+  
+  
+};
+
+
+/*Ida Slut*/
