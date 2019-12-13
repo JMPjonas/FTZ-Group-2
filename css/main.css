@@ -584,7 +584,7 @@ l = linje
     justify-content: space-between;
 }    
 
-input[type=nummerplade] {
+input[type=text] {
   width: 95%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -840,6 +840,10 @@ br{
   clear:both;
   height:20px;
 }
+    .logogrid{
+        display: grid;
+        grid-auto-columns: 
+    }
     
 /*Nicoline slut*/
 
