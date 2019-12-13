@@ -53,25 +53,57 @@ if(nummerplade=='') {
         location.href = "mycar.html";
     }
 }
+
 /*Nicoline slut*/
 
-/* JONAS START*/
- var image_tracker='dsinaktiv';
+
+
+
+///Jonas (START)
+//Dette stykke gør at jeg kan toggle visse elementer fra og til.
+var toggled = false;
+			function toggle(){
+                //Dette slår id'erne fra.
+				if(!toggled){
+					toggled = true;
+					document.getElementById("a1").style.display = "none";
+                    document.getElementById("a2").style.display = "none";
+                    document.getElementById("a3").style.display = "none";
+                    document.getElementById("a4").style.display = "none";
+                    document.getElementById("a5").style.display = "none";
+                    document.getElementById("a6").style.display = "none";
+                    document.getElementById("a7").style.display = "none";
+                    document.getElementById("a8").style.display = "none";
+					return;
+				}
+                //Dette slår id'erne til igen.
+				if(toggled){
+					toggled = false;
+					document.getElementById("a1").style.display = "grid";
+                    document.getElementById("a2").style.display = "grid";
+                    document.getElementById("a3").style.display = "grid";
+                    document.getElementById("a4").style.display = "grid";
+                    document.getElementById("a5").style.display = "grid";
+                    document.getElementById("a6").style.display = "grid";
+                    document.getElementById("a7").style.display = "grid";
+                    document.getElementById("a8").style.display = "grid";
+					return;
+				}
+			}
+//Dette gør at knappen går fra aktiv til deaktiv.
+ var image_tracker='dsaktiv';
 function swap(){
     let billede = document.getElementById ("indikator");
     if (image_tracker=='dsinaktiv') {
-        billede.src ='/img/icons/drivesafedeaktiv.svg';
+        billede.src ='/img/icons/drivesafeaktiv.svg';
         image_tracker= 'dsaktiv';
-        document.getElementById(kunaktiv).style.display=="none";
     } else{
-        billede.src = '/img/icons/drivesafeaktiv.svg';
+        billede.src = '/img/icons/drivesafedeaktiv.svg';
         image_tracker = 'dsinaktiv'
     }
     
 }
-/* JONAS SLUT*/
-
-/* JONAS SLUT*/
+//Jonas (SLUT)
 
 /* Ida Start */ 
 let toggleNavStatus = false; 
