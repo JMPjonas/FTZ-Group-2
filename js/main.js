@@ -40,36 +40,12 @@ for (let i = 0; i < arrayLength; i++) {
 
 let btnToggleNav = document.getElementsByClassName("btn-toggle-nav");
 
+btnToggleNav[0].addEventListener("click", toggleNav);
+
 function burgerCross() {
     
     btnToggleNav[0].classList.toggle("open");
-    
-//    if(btnToggleNav.classList.contains("open"))
-//    {
-//      btnToggleNav.classList.remove("open");   
-//   }
-//    else
-//    {
-//      btnToggleNav.classList.add("open");
-//    }
   };
-
-
-//window.onload = function (){
-//  let btnToggleNav = document.getElementById(".btn-toggle-nav");
-//  btnToggleNav.addEventListener("click", e => {
-//  
-//    if(btnToggleNav.classList.contains("open")){
-//      btnToggleNav.classList.remove("open");   
-//   }else{
-//      btnToggleNav.classList.add("open");
-//    }
-//  });
-//  
-//  
-//};
-
-
 // Ida (SLUT)
 
 //Nicoline (START)
