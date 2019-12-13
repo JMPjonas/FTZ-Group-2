@@ -3,6 +3,8 @@
  var image_tracker='udennummer';
 function change(){
     let billede = document.getElementById ("nummerboks");
+   
+    
     if (image_tracker=='udennummer') {
         billede.src ='/img/nummerplade2.svg';
         image_tracker= 'mednummer';
@@ -14,7 +16,7 @@ function change(){
 }
 
 var drink = ["ginhass", "mojito", "Darknstormy"];
-document.getElementById("cocktails").innerHTML=drink[0];
+document.getElementById("cocktails").innerHTML=drink[1];
 console.log("drink");
      
 
