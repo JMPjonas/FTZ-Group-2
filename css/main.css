@@ -53,10 +53,6 @@ body {
     margin: 0;
     padding: 0;
 }
-@media only screen and (max-width: 420px) {
-    
-/*Dette er "kommer snart" teksten som først skal komme på skærme der er størrere end 410px i bredden.*/
-.comingsoon{display: none;}
     
 /*BODY Slut*/
 
@@ -1164,16 +1160,5 @@ l = linje
      
 }
 /*Ida slut*/
-    
-}/*DETTE ER TIL MEDIA QUERY I TOPPEN!*/
 
-@media only screen and (min-width: 420px) {
-    body{ background-color: black;}
-    .menuogbox{display: none;}
-    .comingsoon{
-        margin-top: 100%;
-        justify-self: center;}
-    .comingsoon1{color: white;}
-    
-    }
     
