@@ -34,10 +34,10 @@ let nummerplade = document.getElementsByClassName('nummerplade')[0].value;
 let adgangskode = document.getElementsByClassName('adgangskode')[0].value;   
 if(nummerplade=='') {
     
- document.getElementsByClassName('nummerplade')[0].placeholder = "Venligst indtast nummer";
+ document.getElementsByClassName('nummerplade')[0].placeholder = "Venligst indtast nummerplade";
     
     if (adgangskode == '') {
-        document.getElementsByClassName('adgangskode')[0].placeholder = "Venligst indtast felterne";
+        document.getElementsByClassName('adgangskode')[0].placeholder = "Venligst indtast adgangskode";
     }
       
  }    
