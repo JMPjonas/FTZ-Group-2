@@ -51,7 +51,7 @@ function burgerCross() {
 
 /* JOACHIM START*/
 var drink = ["ginhass", "mojito", "Darknstormy"];
-//document.getElementById("cocktails").innerHTML=drink[0];
+document.getElementById("cocktails").innerHTML=drink[0].defer;
 console.log("drink"); 
 
  
