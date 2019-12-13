@@ -1,23 +1,74 @@
-/* JOACHIM START*/
+// Ida (START)
+let toggleNavStatus = false; 
 
- var image_tracker='udennummer';
+let toggleNav = function(){
+ let getSidebar = document.querySelector(".toggle-sidebar");
+ let getSidebarUl = document.querySelector(".toggle-sidebar ul");
+ let getSidebarLinks = document.querySelectorAll(".toggle-sidebar a");
+
+
+ 
+if (toggleNavStatus === false) {
+    console.log("Open nav");
+  getSidebarUl.style.visibility = "visible";
+  getSidebar.style.width = "100%"; 
+    
+let arrayLength = getSidebarLinks.length; 
+for (let i = 0; i < arrayLength; i++) {
+    getSidebarLinks[i].style.opacity = "1"; 
+  } 
+ toggleNavStatus = true;
+}
+
+    
+else if (toggleNavStatus === true) {
+    console.log("Closed nav");
+    getSidebar.style.width = "0%"; 
+    
+let arrayLength = getSidebarLinks.length; 
+for (let i = 0; i < arrayLength; i++) {
+    getSidebarLinks[i].style.opacity = "0";
+  } 
+
+ getSidebarUl.style.visibility = "hidden"; 
+    
+ toggleNavStatus = false;
+         
+}
+    burgerCross();
+}
+
+let btnToggleNav = document.getElementsByClassName("btn-toggle-nav");
+
+btnToggleNav[0].addEventListener("click", toggleNav);
+
+function burgerCross() {
+    
+    btnToggleNav[0].classList.toggle("open");
+  }; 
+
+
+
+/* JOACHIM START*/
+var drink = ["ginhass", "mojito", "Darknstormy"];
+//document.getElementById("cocktails").innerHTML=drink[0];
+console.log("drink"); 
+
+ 
+
+var image_tracker='udennummer';
 function change(){
     let billede = document.getElementById ("nummerboks");
+    
     if (image_tracker=='udennummer') {
         billede.src ='/img/nummerplade2.svg';
         image_tracker= 'mednummer';
-    } else{
+    } 
+else{
         billede.src = '/img/nummerplade.svg';
         image_tracker = 'udennummer';
-    }
-    
+    }   
 }
-
-var drink = ["ginhass", "mojito", "Darknstormy"];
-document.getElementById("cocktails").innerHTML=drink[0];
-console.log("drink");
-     
-
 /* JOACHIM SLUT*/
 
 
@@ -27,7 +78,7 @@ let loginButton = document.getElementById("logindlogin");
 console.log(loginButton);
 
 
-loginButton.addEventListener("click", validation);
+//loginButton.addEventListener("click", validation);
 
 function validation (){
 let nummerplade = document.getElementsByClassName('nummerplade')[0].value;   
@@ -101,57 +152,3 @@ function swap(){
 }
 //Jonas (SLUT)
 
-/* Ida Start */ 
-let toggleNavStatus = false; 
-
-let toggleNav = function(){
- let getSidebar = document.querySelector(".nav-sidebar");
- let getSidebarUl = document.querySelector(".nav-sidebar ul");
- let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
-
- 
-if (toggleNavStatus === false) {
-  getSidebarUl.style.visibility = "visible";
-  getSidebar.style.width = "100%"; 
-    
-let arrayLength = getSidebarLinks.length; 
-for (let i = 0; i < arrayLength; i++) {
-    getSidebarLinks[i].style.opacity = "1"; 
-  } 
-    
- toggleNavstatus = true;
-         
-}
-
-    
-else if (toggleNavStatus === true) {
-    getSidebar.style.width = "0%"; 
-    
-let arrayLength = getSidebarLinks.length; 
-for (let i = 0; i < arrayLength; i++) {
-    getSidebarLinks[i].style.opacity = "0";
-  } 
-
- getSidebarUl.style.visibility = "hidden"; 
-    
- toggleNavstatus = false;
-         
-     }
-}
-
-window.onload = function (){
-  let btnToggleNav = document.getElementById(".btn-toggle-nav");
-  btnToggleNav.addEventListener("click", e => {
-  
-    if(btnToggleNav.classList.contains("open")){
-      btnToggleNav.classList.remove("open");   
-   }else{
-      btnToggleNav.classList.add("open");
-    }
-  });
-  
-  
-};
-
-
-/*Ida Slut*/

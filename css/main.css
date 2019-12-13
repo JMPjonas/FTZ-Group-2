@@ -6,7 +6,7 @@ h1{
     font-family: 'open sans';
     font-weight: 600;
     font-size: 7.9vw;
-    align-content: center;
+    text-align: center;
     color: #0C213E;
 }
 /*Hvid stor knap "Ring nu" (BOLD)*/
@@ -14,7 +14,7 @@ h2{
    font-family: 'open sans';
     font-weight: 700;
     font-size: 21px;
-    align-content: right;
+    text-align: right;
     color: #ffffff; 
 }
 /*Knapper (light)*/
@@ -22,7 +22,7 @@ h3{
     font-family: 'open sans';
     font-weight: 300;
     font-size: 3.9vw;
-    align-content: left;
+    text-align: left;
     color: #0C213E; 
 }
 /*Tekst felter med regular 15px*/
@@ -30,8 +30,7 @@ h4{
     font-family: 'open sans';
     font-weight: 400;
     font-size: 3.9vw;
-    align-content: center;
-    text-align: top center;
+    text-align: center;
     color: #0C213E; 
 }
 
@@ -40,7 +39,7 @@ h5{
     font-family: 'open sans';
     font-weight: 400;
     font-size: 20px;
-    align-content: top;
+    text-align: center;
     color: #ffffff; 
 }
 /*Tekst family "SLUT"*/
@@ -53,10 +52,6 @@ body {
     margin: 0;
     padding: 0;
 }
-@media only screen and (max-width: 420px) {
-    
-/*Dette er "kommer snart" teksten som først skal komme på skærme der er størrere end 410px i bredden.*/
-.comingsoon{display: none;}
     
 /*BODY Slut*/
 
@@ -1052,25 +1047,17 @@ l = linje
 /*Joachim slut*/
 
 /*Ida start*/
-.indbakken{
-  position: absolute;
-  z-index: 25;    
-  margin-left: 60%;
-  margin-top: -20%;
-}
 .btn-toggle-nav{
   width:60px;
   height:45px;
   position:fixed; 
-  left: 2; 
-  margin: 0vh;
-  margin-top: -6vh; 
+  left: 2px; 
   cursor:pointer;
 }
 
 .btn-toggle-nav > span{
   width: 60px; 
-  height:9px;
+  height: 9px;
   border-radius:20px;
   display:block;
   background-color:#0E294E;
@@ -1114,34 +1101,35 @@ l = linje
 
 .toggle-sidebar{
     position: fixed;
-    top: 1; 
+    top: 3%; 
     left: 0; 
-    bottom: 0; 
-    width: 0px;
-    height: calc(100vh - 60px); 
+    height: 100%; 
     padding: 0 5px; 
     background-color: #EEEEEE; 
-    z-index: 1000;
+    z-index: 999;
     transition: all 0.5s ease-in-out; 
 }
 
 .toggle-sidebar ul{
-  padding-top: 15px;
+  padding-top: 30px;
+    margin: 7%; 
+    height: 100%; 
   overflow: hidden;
   visibility: hidden; 
     
 }
 
 .toggle-sidebar ul li{
- line-height: 40px;
+    top: 100px; 
+ line-height: 80px;
     list-style: none;
 }
 
 .toggle-sidebar ul li a {
   display: block;
-    width: 60%;
+  width: 60%;
   height: 100%; 
-  padding: 0 10px; 
+  top: 30px; 
   text-decoration: none; 
   text-transform: uppercase;
   color: #0E294E; 
@@ -1158,20 +1146,21 @@ l = linje
     
 }
 
+.indbakken{
+  position: absolute;
+  z-index: 999;
+  height: 65px;
+  width: 65px; 
+  margin-left: 35%;
+  margin-top: -23%;
+  
+}
+
 .minbil{
-     
+  height: 30px;
+  width: 30px;
+  margin-left: 2%; 
 }
 /*Ida slut*/
-    
-}/*DETTE ER TIL MEDIA QUERY I TOPPEN!*/
 
-@media only screen and (min-width: 420px) {
-    body{ background-color: black;}
-    .menuogbox{display: none;}
-    .comingsoon{
-        margin-top: 100%;
-        justify-self: center;}
-    .comingsoon1{color: white;}
-    
-    }
     
