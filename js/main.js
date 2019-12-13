@@ -108,35 +108,22 @@ if(nummerplade=='') {
 
 ///Jonas (START)
 //Dette stykke gør at jeg kan toggle visse elementer fra og til.
-var toggled = false;
-			function toggle(){
-                //Dette slår id'erne fra.
-				if(!toggled){
-					toggled = true;
-					document.getElementById("a1").style.display = "none";
-                    document.getElementById("a2").style.display = "none";
-                    document.getElementById("a3").style.display = "none";
-                    document.getElementById("a4").style.display = "none";
-                    document.getElementById("a5").style.display = "none";
-                    document.getElementById("a6").style.display = "none";
-                    document.getElementById("a7").style.display = "none";
-                    document.getElementById("a8").style.display = "none";
-					return;
-				}
-                //Dette slår id'erne til igen.
-				if(toggled){
-					toggled = false;
-					document.getElementById("a1").style.display = "grid";
-                    document.getElementById("a2").style.display = "grid";
-                    document.getElementById("a3").style.display = "grid";
-                    document.getElementById("a4").style.display = "grid";
-                    document.getElementById("a5").style.display = "grid";
-                    document.getElementById("a6").style.display = "grid";
-                    document.getElementById("a7").style.display = "grid";
-                    document.getElementById("a8").style.display = "grid";
-					return;
-				}
-			}
+function toggle(){
+let a1 = document.getElementById("a1")
+let a2 = document.getElementById("a2")
+let a3 = document.getElementById("a3")
+let a4 = document.getElementById("a4")
+let a5 = document.getElementById("a5")
+let a6 = document.getElementById("a6")
+let a7 = document.getElementById("a7")
+let a8 = document.getElementById("a8")
+
+let grid = [a1, a2, a3, a4, a5, a6, a7, a8];
+let i;
+for (i = 0; i < grid.length; i++) {
+grid[i].classList.toggle("hideandturnon");
+}
+};
 //Dette gør at knappen går fra aktiv til deaktiv.
  var image_tracker='dsaktiv';
 function swap(){

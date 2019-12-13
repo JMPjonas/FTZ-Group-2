@@ -550,6 +550,10 @@ l = linje
     grid-row-start: 1;
 }
 /*Instruments symbol hjælp (SLUT)*/
+
+.hideandturnon{
+display: none; 
+}
 /*Jonas slut*/
 
 /*Nicoline start*/
