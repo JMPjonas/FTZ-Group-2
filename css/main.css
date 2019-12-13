@@ -53,10 +53,6 @@ body {
     margin: 0;
     padding: 0;
 }
-@media only screen and (max-width: 420px) {
-    
-/*Dette er "kommer snart" teksten som først skal komme på skærme der er størrere end 410px i bredden.*/
-.comingsoon{display: none;}
     
 /*BODY Slut*/
 
@@ -559,12 +555,11 @@ l = linje
 
 /*Nicoline start*/
 
-.forsidelogo{
-  
-    width: 100vw;
-    height: 100vh;
-    margin-left: 5%;   
-}
+    .logologind{
+        grid-column-start: 2;
+        grid-row-start: 2;
+        margin-left: -100%;
+    }
 
 .form1{
     z-index: 31;
@@ -659,7 +654,12 @@ input[type=password] {
    
 }
 
-
+ .logogrid{
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: auto;
+    }
+    
 /*Chat*/
 
 .chatbox{
@@ -840,10 +840,7 @@ br{
   clear:both;
   height:20px;
 }
-    .logogrid{
-        display: grid;
-        grid-auto-columns: 
-    }
+   
     
 /*Nicoline slut*/
 
@@ -1164,16 +1161,5 @@ l = linje
      
 }
 /*Ida slut*/
-    
-}/*DETTE ER TIL MEDIA QUERY I TOPPEN!*/
 
-@media only screen and (min-width: 420px) {
-    body{ background-color: black;}
-    .menuogbox{display: none;}
-    .comingsoon{
-        margin-top: 100%;
-        justify-self: center;}
-    .comingsoon1{color: white;}
-    
-    }
     
