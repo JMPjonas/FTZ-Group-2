@@ -104,6 +104,7 @@ else{
 
 ///Jonas (START)
 //Dette stykke gør at jeg kan toggle visse elementer fra og til.
+var image_tracker='grøn';
 function toggle(){
 let a1 = document.getElementById("a1")
 let a2 = document.getElementById("a2")
@@ -119,19 +120,15 @@ let i;
 for (i = 0; i < grid.length; i++) {
 grid[i].classList.toggle("hideandturnon");
 }
-};
-//Dette gør at knappen går fra aktiv til deaktiv.
- var image_tracker='dsaktiv';
-function swap(){
     let image = document.getElementById ("indikator");
-    if (image_tracker=='dsinaktiv') {
+    if (image_tracker=='rød') {
         image.src ='/img/icons/drivesafeaktiv.svg';
-        image_tracker= 'dsaktiv';
+        image_tracker= 'grøn';
     } else{
         image.src = '/img/icons/drivesafedeaktiv.svg';
-        image_tracker = 'dsinaktiv'
+        image_tracker = 'rød'
     }
-    
-}
+};
+
 //Jonas (SLUT)
 
