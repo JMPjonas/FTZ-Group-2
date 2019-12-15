@@ -50,7 +50,13 @@ let p;
 for (p = 0; p < mad.length; p++) {
   madlisten += mad[p] + "<br>";
 } 
+
+try {
 document.getElementById("listen").innerHTML = madlisten;
+}
+catch(err) {
+    console.log(err);
+}
 
  
 
