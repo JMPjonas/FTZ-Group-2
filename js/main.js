@@ -2,18 +2,20 @@
 let dyr = ["Hunde", "Katte", "Delfiner", "Fugle", "Løver", "Heste"];
 let text = "";
 let i;
-for (i = 0; i < dyr.length; i++) {
-
+for (i = 0; i < dyr.length; i++){
+console.log(dyr[i]);
 }
-document.getElementById("dyr").innerHTML = text;
 
 //array
 let loginButton = document.getElementById("logindlogin");
 console.log(loginButton);
 
-window.onload=function(){
-loginButton.addEventListener("click", validation);
+try {
+    loginButton.addEventListener("click", validation);
 }
+catch(err) {
+}
+
 
 function validation (){
 let nummerplade = document.getElementsByClassName('nummerplade')[0].value;   
@@ -35,6 +37,7 @@ if(nummerplade=='') {
         location.href = "mycar.html";
     };
 };
+
 
 
 
