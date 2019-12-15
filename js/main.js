@@ -117,7 +117,12 @@ for (let i = 0; i < arrayLength; i++) {
 
 let btnToggleNav = document.getElementsByClassName("btn-toggle-nav");
 
-btnToggleNav[0].addEventListener("click", toggleNav);
+try {
+   btnToggleNav[0].addEventListener("click", toggleNav);
+}
+catch(err) {
+}
+
 
 function burgerCross() {
     
