@@ -1,9 +1,21 @@
 /*Nicoline start*/
+let dyr = ["Hunde", "Katte", "Delfiner", "Fugle", "Løver", "Heste"];
+let text = "";
+let i;
+for (i = 0; i < dyr.length; i++){
+console.log(dyr[i]);
+}
+
 //array
 let loginButton = document.getElementById("logindlogin");
 console.log(loginButton);
 
-loginButton.addEventListener("click", validation);
+try {
+    loginButton.addEventListener("click", validation);
+}
+catch(err) {
+}
+
 
 function validation (){
 let nummerplade = document.getElementsByClassName('nummerplade')[0].value;   
@@ -20,14 +32,48 @@ if(nummerplade=='') {
      else if (adgangskode == '') {
         document.getElementsByClassName('adgangskode')[0].placeholder = "Venligst indtast felterne";
     }
-    
+       
     else {
         location.href = "mycar.html";
-    }
-}
+    };
+};
+
+
+
 
 /*Nicoline slut*/
 
+/* JOACHIM START*/
+let mad = ["Bøf", "Suppe", "Quinoasalat", "Lasagne", "Laks", "Pasta"];
+let madlisten = "";
+let p;
+for (p = 0; p < mad.length; p++) {
+  madlisten += mad[p] + "<br>";
+} 
+
+try {
+document.getElementById("listen").innerHTML = madlisten;
+}
+catch(err) {
+    console.log(err);
+}
+
+ 
+
+var image_tracker='udennummer';
+function change(){
+    let billede = document.getElementById ("nummerboks");
+    
+    if (image_tracker=='udennummer') {
+        billede.src ='/img/nummerplade2.svg';
+        image_tracker= 'mednummer';
+    } 
+else{
+        billede.src = '/img/nummerplade.svg';
+        image_tracker = 'udennummer';
+    }   
+}
+/* JOACHIM SLUT*/
 
 // Ida (START)
 let toggleNavStatus = false; 
@@ -79,29 +125,6 @@ function burgerCross() {
   }; 
 
 
-
-/* JOACHIM START*/
-var drink = ["ginhass", "mojito", "Darknstormy"];
-document.getElementById("cocktails").innerHTML=drink[0];
-console.log("drink"); 
-
- 
-
-var image_tracker='udennummer';
-function change(){
-    let billede = document.getElementById ("nummerboks");
-    
-    if (image_tracker=='udennummer') {
-        billede.src ='/img/nummerplade2.svg';
-        image_tracker= 'mednummer';
-    } 
-else{
-        billede.src = '/img/nummerplade.svg';
-        image_tracker = 'udennummer';
-    }   
-}
-/* JOACHIM SLUT*/
-
 ///Jonas (START)
 //Dette stykke gør at jeg kan toggle visse elementer fra og til.
 var image_tracker='grøn';
@@ -131,4 +154,3 @@ grid[i].classList.toggle("hideandturnon");
 };
 
 //Jonas (SLUT)
-
