@@ -1,4 +1,12 @@
 /*Nicoline start*/
+let dyr = ["Hunde", "Katte", "Delfiner", "Fugle", "Løver", "Heste"];
+let text = "";
+let i;
+for (i = 0; i < dyr.length; i++) {
+
+}
+document.getElementById("dyr").innerHTML = text;
+
 //array
 let loginButton = document.getElementById("logindlogin");
 console.log(loginButton);
@@ -28,13 +36,6 @@ if(nummerplade=='') {
     };
 };
 
-let dyr = ["Hunde", "Katte", "Delfiner", "Fugle", "Løver", "Heste"];
-let text = "";
-let i;
-for (i = 0; i < dyr.length; i++) {
-  text += dyr[i] + "<br>";
-}
-document.getElementById("dyr").innerHTML = text;
 
 
 /*Nicoline slut*/
