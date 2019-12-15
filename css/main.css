@@ -550,13 +550,16 @@ l = linje
     grid-row-start: 1;
 }
 /*Instruments symbol hjælp (SLUT)*/
+
+.hideandturnon{
+display: none; 
+}
 /*Jonas slut*/
 
 /*Nicoline start*/
 
  .logologind{
         grid-column-start: 2;
-        grid-row-start: ;
     }
 
 .form1{
@@ -657,10 +660,6 @@ input[type=password] {
     }
     
 /*Chat*/
-
-.chatbox{
- margin-left: %
-}
 
 .logochat{
     position: absolute;
@@ -810,11 +809,11 @@ a{
   font-family: "open sans";
   padding:5px;
   width: 20%;
-  color: #fff';
-  border-radius:5px;
-  border:1px solid #f0f0f1;
-  background-color:#333;
-  color:#0E294E;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #f0f0f1;
+  background-color:#0E294E;
+  color:#ffffff;
   outline:none;
   border:2px solid transparent;
   float:left;
@@ -1044,6 +1043,11 @@ l = linje
     grid-row-start: 5;
 }
 /*Support (SLUT)*/
+
+.jeksamentest1{
+    margin-left: 300px;
+}
+
 /*Joachim slut*/
 
 /*Ida start*/
@@ -1064,7 +1068,7 @@ l = linje
   position:absolute;
   transition: all .25s ease-in-out;
   transform-origin: left center;
-  -webskit-transform-origin: left center;
+  -webkit-transform-origin: left center;
   -o-transform-origin: left center;
   -moz-transform-origin: left center;
 }

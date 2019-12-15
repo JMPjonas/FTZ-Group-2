@@ -1,41 +1,65 @@
-///*Nicoline start*/
-////array
-//let loginButton = document.getElementById("logindlogin");
-//console.log(loginButton);
-//
-//
-//loginButton.addEventListener("click", validation);
-//
-//function validation (){
-//let nummerplade = document.getElementsByClassName('nummerplade')[0].value;   
-//let adgangskode = document.getElementsByClassName('adgangskode')[0].value;   
-//if(nummerplade=='') {
-//    
-// document.getElementsByClassName('nummerplade')[0].placeholder = "Venligst indtast nummerplade";
-//    
-//    if (adgangskode == '') {
-//        document.getElementsByClassName('adgangskode')[0].placeholder = "Venligst indtast adgangskode";
-//    }
-//      
-// }    
-//     else if (adgangskode == '') {
-//        document.getElementsByClassName('adgangskode')[0].placeholder = "Venligst indtast felterne";
-//    }
-//    
-//    else {
-//        location.href = "mycar.html";
-//    }
-//}
-//
-//var dyr = ["Hund", "Kat", "Hest", "Fisk", "Løve", "Delfin"];
-//var text = "";
-//var i;
-//for (i = 0; i < cars.length; i++) {
-//  text += cars[i] + "<br>";
-//}
-//
-///*Nicoline slut*/
+/*Nicoline start*/
+//array
+let loginButton = document.getElementById("logindlogin");
+console.log(loginButton);
 
+window.onload=function(){
+loginButton.addEventListener("click", validation);
+}
+
+function validation (){
+let nummerplade = document.getElementsByClassName('nummerplade')[0].value;   
+let adgangskode = document.getElementsByClassName('adgangskode')[0].value;   
+if(nummerplade=='') {
+    
+ document.getElementsByClassName('nummerplade')[0].placeholder = "Venligst indtast nummerplade";
+    
+    if (adgangskode == '') {
+        document.getElementsByClassName('adgangskode')[0].placeholder = "Venligst indtast adgangskode";
+    }
+      
+ }    
+     else if (adgangskode == '') {
+        document.getElementsByClassName('adgangskode')[0].placeholder = "Venligst indtast felterne";
+    }
+       
+    else {
+        location.href = "mycar.html";
+    };
+};
+
+let dyr = ["Hunde", "Katte", "Delfiner", "Fugle", "Løver", "Heste"];
+let text = "";
+let i;
+for (i = 0; i < dyr.length; i++) {
+  text += dyr[i] + "<br>";
+}
+document.getElementById("dyr").innerHTML = text;
+
+
+/*Nicoline slut*/
+
+/* JOACHIM START*/
+var drink = ["ginhass", "mojito", "Darknstormy"];
+document.getElementById("cocktails").innerHTML=drink[0];
+console.log("drink"); 
+
+ 
+
+var image_tracker='udennummer';
+function change(){
+    let billede = document.getElementById ("nummerboks");
+    
+    if (image_tracker=='udennummer') {
+        billede.src ='/img/nummerplade2.svg';
+        image_tracker= 'mednummer';
+    } 
+else{
+        billede.src = '/img/nummerplade.svg';
+        image_tracker = 'udennummer';
+    }   
+}
+/* JOACHIM SLUT*/
 
 // Ida (START)
 let toggleNavStatus = false; 
@@ -87,73 +111,35 @@ function burgerCross() {
   }; 
 
 
+///Jonas (START)
+//Dette stykke gør at jeg kan toggle visse elementer fra og til.
+function toggle(){
+let a1 = document.getElementById("a1")
+let a2 = document.getElementById("a2")
+let a3 = document.getElementById("a3")
+let a4 = document.getElementById("a4")
+let a5 = document.getElementById("a5")
+let a6 = document.getElementById("a6")
+let a7 = document.getElementById("a7")
+let a8 = document.getElementById("a8")
 
-///* JOACHIM START*/
-//var drink = ["ginhass", "mojito", "Darknstormy"];
-////document.getElementById("cocktails").innerHTML=drink[0];
-//console.log("drink"); 
-//
-// 
-//
-//var image_tracker='udennummer';
-//function change(){
-//    let billede = document.getElementById ("nummerboks");
-//    
-//    if (image_tracker=='udennummer') {
-//        billede.src ='/img/nummerplade2.svg';
-//        image_tracker= 'mednummer';
-//    } 
-//else{
-//        billede.src = '/img/nummerplade.svg';
-//        image_tracker = 'udennummer';
-//    }   
-//}
-///* JOACHIM SLUT*/
-//
-//
-/////Jonas (START)
-////Dette stykke gør at jeg kan toggle visse elementer fra og til.
-//var toggled = false;
-//			function toggle(){
-//                //Dette slår id'erne fra.
-//				if(!toggled){
-//					toggled = true;
-//					document.getElementById("a1").style.display = "none";
-//                    document.getElementById("a2").style.display = "none";
-//                    document.getElementById("a3").style.display = "none";
-//                    document.getElementById("a4").style.display = "none";
-//                    document.getElementById("a5").style.display = "none";
-//                    document.getElementById("a6").style.display = "none";
-//                    document.getElementById("a7").style.display = "none";
-//                    document.getElementById("a8").style.display = "none";
-//					return;
-//				}
-//                //Dette slår id'erne til igen.
-//				if(toggled){
-//					toggled = false;
-//					document.getElementById("a1").style.display = "grid";
-//                    document.getElementById("a2").style.display = "grid";
-//                    document.getElementById("a3").style.display = "grid";
-//                    document.getElementById("a4").style.display = "grid";
-//                    document.getElementById("a5").style.display = "grid";
-//                    document.getElementById("a6").style.display = "grid";
-//                    document.getElementById("a7").style.display = "grid";
-//                    document.getElementById("a8").style.display = "grid";
-//					return;
-//				}
-//			}
-////Dette gør at knappen går fra aktiv til deaktiv.
-// var image_tracker='dsaktiv';
-//function swap(){
-//    let image = document.getElementById ("indikator");
-//    if (image_tracker=='dsinaktiv') {
-//        image.src ='/img/icons/drivesafeaktiv.svg';
-//        image_tracker= 'dsaktiv';
-//    } else{
-//        image.src = '/img/icons/drivesafedeaktiv.svg';
-//        image_tracker = 'dsinaktiv'
-//    }
-//    
-//}
-////Jonas (SLUT)
-//
+let grid = [a1, a2, a3, a4, a5, a6, a7, a8];
+let i;
+for (i = 0; i < grid.length; i++) {
+grid[i].classList.toggle("hideandturnon");
+}
+};
+//Dette gør at knappen går fra aktiv til deaktiv.
+ var image_tracker='dsaktiv';
+function swap(){
+    let image = document.getElementById ("indikator");
+    if (image_tracker=='dsinaktiv') {
+        image.src ='/img/icons/drivesafeaktiv.svg';
+        image_tracker= 'dsaktiv';
+    } else{
+        image.src = '/img/icons/drivesafedeaktiv.svg';
+        image_tracker = 'dsinaktiv'
+    }
+    
+}
+//Jonas (SLUT)
