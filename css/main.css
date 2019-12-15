@@ -69,9 +69,9 @@ body {
 /*Burgermenu (START)*/
 /*Burgermenu grid align*/
 .menu{
+    display: grid;
     border: none;
-    justify-items: end;
-    z-index: 1;
+    z-index: 999;
     grid-column-start: 1;
     grid-row-start: 1;
 }
@@ -125,12 +125,12 @@ body {
 
 /* liste linje */
 hr.linje{
-  border: none;
-  margin-top: 8vh;
-  width: 82vw;
-  height: 0.4vh;
-  background-color: #0E294E;
-  opacity: 32%;
+    border: none;
+    margin-top: 5.5vh;
+    width: 82vw;
+    height: 0.4vh;
+    background-color: #0E294E;
+    opacity: 32%;
 }
 
 /*Grid til listen*/
@@ -581,17 +581,17 @@ display: none;
 }    
 
 input[type=text] {
-  width: 95%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid #0E294E;
-  font-family: 'open sans';
-  font-size: 18px;
-  background-color: #EEEEEE; 
-  color: #0E294E;
-  font-weight: 400;
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #0E294E;
+    font-family: 'open sans';
+    font-size: 18px;
+    background-color: #EEEEEE; 
+    color: #0E294E;
+    font-weight: 400;
 }
 
 .adgangskode{
@@ -599,18 +599,18 @@ input[type=text] {
 }
 
 input[type=password] {
-  width: 95%;
-  padding: 12px 20px;
-  margin: 19px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid #0E294E;
-  font-family: 'open sans';
-  font-size: 18px;
-  background-color: #EEEEEE; 
-  color: #0E294E;
-  font-weight: 400;
-  text-decoration-line: underline; 
+    width: 95%;
+    padding: 12px 20px;
+    margin: 19px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #0E294E;
+    font-family: 'open sans';
+    font-size: 18px;
+    background-color: #EEEEEE; 
+    color: #0E294E;
+    font-weight: 400;
+    text-decoration-line: underline; 
 }
 
 #logindlogin{
@@ -654,10 +654,10 @@ input[type=password] {
 }
 
  .logogrid{
-        display: grid;
-        grid-template-columns: 100px 100px;
-        grid-template-rows: auto;
-    }
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto;
+}
     
 /*Chat*/
 
@@ -669,93 +669,93 @@ input[type=password] {
    
 
 .container{
-  width:100vw;
-  height: 100%;
-  cursor: default;
-  height: 100%;
-  cursor: default;
-  overflow-y: scroll;
+    width:100vw;
+    height: 100%;
+    cursor: default;
+    height: 100%;
+    cursor: default;
+    overflow-y: scroll;
 }
 
 .Area{
-  margin: auto;
-  width:300px;
-  background-color:rgba(240, 240, 240, 0.2);
-  display:table;
-  margin-bottom:10px;
+    margin: auto;
+    width:300px;
+    background-color:rgba(240, 240, 240, 0.2);
+    display:table;
+    margin-bottom:10px;
 }
 .L{   
-  float:left;
+    float:left;
 }
 
 .chaticon{
-  width:35px;
-  height:35px;
-  border-radius:50%;
-  border:1px solid #0E294E;
-  padding:5px;    
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border:1px solid #0E294E;
+    padding:5px;    
 }
 
 .chaticonlady{
-  width:35px;
-  height:35px;
-  border-radius:50%;
-  border:1px solid #0E294E;
-  padding:5px;    
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border:1px solid #0E294E;
+    padding:5px;    
 }
 
 .R{
     float:right;
 }
 .text{
-  color: #0E294E;
-  font-family: "Open Sans";
-  font-size: 15px;
-  font-weight:lighter;
-  line-height: 30px;
-  width:300px;
-  border:1px solid #f0f0f0;
-  background-color:rgba(255, 255, 255, 0.6);
-  margin-top:10px;
-  border-radius:20px;
-  padding:8px;  
+    color: #0E294E;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight:lighter;
+    line-height: 30px;
+    width:300px;
+    border:1px solid #f0f0f0;
+    background-color:rgba(255, 255, 255, 0.6);
+    margin-top:10px;
+    border-radius:20px;
+    padding:8px;  
 }
 
 .Area textarea{
-  font-size:15px;
-  width:90%;
-  max-width:90%;
-  min-width:90%;
-  font-family: 'open sans';
-  padding:5%;
-  border-radius:5px;
-  border:1px solid #f0f0f1;
-  background-color:#E3E3E3;
-  color:#0E294E;
-  outline:none;
-  border:1px solid transparent;
+    font-size:15px;
+    width:90%;
+    max-width:90%;
+    min-width:90%;
+    font-family: 'open sans';
+    padding:5%;
+    border-radius:5px;
+    border:1px solid #f0f0f1;
+    background-color:#E3E3E3;
+    color:#0E294E;
+    outline:none;
+    border:1px solid transparent;
 }
 .Area textarea:focus{
-  color:#00000029;
-     -webkit-transition: all 1.5s;
-    -moz-transition: all 1.5s;
+    color:#00000029;
+   -webkit-transition: all 1.5s;
+   -moz-transition: all 1.5s;
     transition: all 1.5s;
-  background-color:#fff;
+    background-color:#fff;
 }
 
 .R .tooltip{
-  font-family: "open sans";
-  font-size:15px;
-  position:absolute;
-  background-color:#fff;
-  padding:5px;
-  border-radius:5px;
-  border:2px solid #0E294E;
-  margin-left:70px;
-  margin-top:-70px;
-  display:none;
-  color: #0E294E;
-  font-weight: 200;
+    font-family: "open sans";
+    font-size:15px;
+    position:absolute;
+    background-color:#fff;
+    padding:5px;
+    border-radius:5px;
+    border:2px solid #0E294E;
+    margin-left:70px;
+    margin-top:-70px;
+    display:none;
+    color: #0E294E;
+    font-weight: 200;
 }
 .R .tooltip:before{
     content: '';
@@ -770,25 +770,24 @@ input[type=password] {
     font-family: "open sans";
 }
 .R:hover .tooltip{
-  display:block;
+    display:block;
 }
-
+    
 .L .tooltip{
-  font-size:15px;
-  position:absolute;
-  background-color:#fff;
-  padding:5px;
-  border-radius:5px;
-  border:2px solid #0E294E;
-  margin-left:70px;
-  margin-top:-70px;
-  display:none;  
-  font-family: "open sans";
-  font-weight: 200;
-  color: #0E294E;
+    font-size:15px;
+    position:absolute;
+    background-color:#fff;
+    padding:5px;
+    border-radius:5px;
+    border:2px solid #0E294E;
+    margin-left:70px;
+    margin-top:-70px;
+    display:none;  
+    font-family: "open sans";
+    font-weight: 200;
+    color: #0E294E;
 }
-.L .tooltip:before
-{
+.L .tooltip:before{
     content: '';
     position: absolute;
     width: 1px;
@@ -800,46 +799,42 @@ input[type=password] {
 }
 
 a{
-  text-decoration:none;
+    text-decoration:none;
 }
 
 
 .Area input[type=button]{
-  font-size:15px;
-  font-family: "open sans";
-  padding:5px;
-  width: 20%;
-  color: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #f0f0f1;
-  background-color:#0E294E;
-  color:#ffffff;
-  outline:none;
-  border:2px solid transparent;
-  float:left;
+    font-size:15px;
+    font-family: "open sans";
+    padding:5px;
+    width: 20%;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #f0f0f1;
+    background-color:#0E294E;
+    color:#ffffff;
+    outline:none;
+    border:2px solid transparent;
+    float:left;
 }
 
 .validation{
-  float:left;
-  background-color:#ccc;
-  border-radius:5px;
-  padding:5px;
-  font-size:12px;
-  line-height:14px;
-  height:0px;
-  margin-left:5px;
-  display:none;
+   float:left;
+   background-color:#ccc;
+   border-radius:5px;
+   padding:5px;
+   font-size:12px;
+   line-height:14px;
+   height:0px;
+   margin-left:5px;
+   display:none;
 }
 
 br{
-  clear:both;
-  height:20px;
+   clear:both;
+   height:20px;
 }
-   
-    
 /*Nicoline slut*/
-
-
 
 /*Joachim start*/
 /*Burgermenu, Headline & box*/
@@ -960,7 +955,7 @@ br{
 }
 
 #nummerboks {
-     margin-top: 40%;
+    margin-top: 40%;
     justify-self: center;
     z-index: 4;
     grid-column-start: 1;
@@ -1052,38 +1047,38 @@ l = linje
 
 /*Ida start*/
 .btn-toggle-nav{
-  width:60px;
-  height:45px;
-  position:fixed; 
-  left: 2px; 
-  cursor:pointer;
+    width:60px;
+    height:45px;
+    position:fixed; 
+    left: 2px; 
+    cursor:pointer;
 }
 
 .btn-toggle-nav > span{
-  width: 60px; 
-  height: 9px;
-  border-radius:20px;
-  display:block;
-  background-color:#0E294E;
-  position:absolute;
-  transition: all .25s ease-in-out;
-  transform-origin: left center;
-  -webkit-transform-origin: left center;
-  -o-transform-origin: left center;
-  -moz-transform-origin: left center;
+    width: 60px; 
+    height: 9px;
+    border-radius:20px;
+    display:block;
+    background-color:#0E294E;
+    position:absolute;
+    transition: all .25s ease-in-out;
+    transform-origin: left center;
+   -webkit-transform-origin: left center;
+   -o-transform-origin: left center;
+   -moz-transform-origin: left center;
 }
 
 .btn-toggle-nav span:nth-child(1){
-  top:0;
-  left:0;
+    top:0;
+    left:0;
 }
 .btn-toggle-nav span:nth-child(2){
-  top:18px;
-  left:0;
+    top:18px;
+    left:0;
 }
 .btn-toggle-nav span:nth-child(3){
-  top:36px;
-  left:0;
+    top:36px;
+    left:0;
 }
 
 .btn-toggle-nav.open span:nth-child(1){
@@ -1108,63 +1103,61 @@ l = linje
     top: 3%; 
     left: 0; 
     height: 100%; 
-    padding: 0 5px; 
-    background-color: #EEEEEE; 
-    z-index: 999;
     transition: all 0.5s ease-in-out; 
 }
 
 .toggle-sidebar ul{
-  padding-top: 30px;
-    margin: 7%; 
+    padding-top: 15%;
+    padding-bottom: -15%;
+    padding-left: 10%;
+    margin-top: -6.5%;
     height: 100%; 
-  overflow: hidden;
-  visibility: hidden; 
-    
+    overflow: hidden;
+    visibility: hidden; 
+    background-color: #EEEEEE; 
 }
 
 .toggle-sidebar ul li{
+    margin: 2%;
     top: 100px; 
- line-height: 80px;
+    line-height: 80px;
     list-style: none;
 }
 
 .toggle-sidebar ul li a {
-  display: block;
-  width: 60%;
-  height: 100%; 
-  top: 30px; 
-  text-decoration: none; 
-  text-transform: uppercase;
-  color: #0E294E; 
-  font-family: 'montserrat', 'open sans'; 
-  font-size: 20px;
-  white-space: nowrap; 
-  opacity: 0;
-  transition: all 0.5s ease-in-out; 
+    display: block;
+    width: 60%;
+    height: 100%; 
+    top: 30px; 
+    text-decoration: none; 
+    text-transform: uppercase;
+    color: #0E294E; 
+    font-family: 'montserrat', 'open sans'; 
+    font-size: 20px;
+    white-space: nowrap; 
+    opacity: 0;
+    transition: all 0.5s ease-in-out; 
 
 }
 
 .toggle-sidebar ul li a:hover{
-  background-color: antiquewhite; 
+    background-color: antiquewhite; 
     
 }
 
 .indbakken{
-  position: absolute;
-  z-index: 999;
-  height: 65px;
-  width: 65px; 
-  margin-left: 35%;
-  margin-top: -23%;
-  
+    position: absolute;
+    z-index: 998;
+    height: 65px;
+    width: 65px; 
+    margin-left: 225px;
+    margin-top: -110px;
 }
 
 .minbil{
-  height: 30px;
-  width: 30px;
-  margin-left: 2%; 
+    height: 30px;
+    width: 30px;
+    margin-left: 2%; 
 }
-/*Ida slut*/
 
-    
+/*Ida slut*/  
