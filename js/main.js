@@ -44,9 +44,13 @@ if(nummerplade=='') {
 /*Nicoline slut*/
 
 /* JOACHIM START*/
-var drink = ["ginhass", "mojito", "Darknstormy"];
-document.getElementById("cocktails").innerHTML=drink[0];
-console.log("drink"); 
+let mad = ["Bøf", "Suppe", "Quinoasalat", "Lasagne", "Laks", "Pasta"];
+let madlisten = "";
+let p;
+for (p = 0; p < mad.length; p++) {
+  madlisten += mad[p] + "<br>";
+} 
+document.getElementById("listen").innerHTML = madlisten;
 
  
 
