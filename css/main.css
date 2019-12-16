@@ -334,7 +334,7 @@ l = linje
 /*Specifikke ting til vejhjælps siden (START)*/
 /*Infobox der er i midten*/
 .vejlillebox{
-    margin-top: 43%;
+    margin-top: 34%;
     z-index: 2;
     grid-column-start: 1;
     grid-row-start: 2;
@@ -343,7 +343,7 @@ l = linje
     z-index: 1;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 10% 60%;
+    grid-template-rows: 20% 6% 60%;
 }
 .vejlillelistgrid{
     display: flex;
@@ -383,7 +383,7 @@ l = linje
     grid-row-start: 1;
 }
 .vejoverskrift{
-    margin-top: 20%;
+    margin-top: 30%;
     justify-self: center;
     z-index: 3;
     grid-column-start: 1;
@@ -512,9 +512,14 @@ l = linje
     grid-column-start: 1;
     grid-row-start: 1;
 }
+.menugrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10%;
+}
 
 .inmenu{
-    z-index: 2;
+    z-index: 999;
     grid-column-start: 1;
     grid-row-start: 1;
 }
